@@ -2,6 +2,7 @@
 This is a Software Engineering project.
 
 These are some user cases:
+
 User Story 1:
 As an Admin
 I want to create and manage user accounts
