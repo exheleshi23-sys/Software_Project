@@ -7,6 +7,7 @@ The system improves organization, communication, and access to important informa
 🚨 A key feature of the system is the integration of a map-based crime tracking system, allowing police officers to visualize incidents geographically in real time.
 
 👥 User Roles
+
 1️⃣ Administrator
     Manage police officers and user accounts
     Add, update, or remove system users
@@ -40,9 +41,6 @@ The system improves organization, communication, and access to important informa
     Improve response time and decision-making
 
 🧠 Innovative Feature
-
-
-
 The most innovative feature of this system is the crime location mapping.
 Instead of viewing cases only as text records, the system allows users to:
     See crimes as markers on a map
