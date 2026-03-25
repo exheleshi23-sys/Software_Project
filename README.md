@@ -1,48 +1,66 @@
-# Software_Project
-This is a Software Engineering project.
+📌 Police Management System
 
-These are some user cases:
+Police Management System is a web-based application designed to help police departments efficiently manage cases, officers, and crime-related data in a centralized platform.
 
-User Story 1:
-As an Admin
-I want to create and manage user accounts
-So that only authorized personnel can access the
-system.
+The system improves organization, communication, and access to important information by replacing manual processes with a structured digital solution.
 
-User Story 2:
-As an Admin
-I want to assign roles to users
-So that each user has appropriate permissions in the
-system.
+🚨 A key feature of the system is the integration of a map-based crime tracking system, allowing police officers to visualize incidents geographically in real time.
 
-User Story 3:
-As an Admin
-I want to add and manage police departments
-So that officers can be organized by department.
+👥 User Roles
+1️⃣ Administrator
+    Manage police officers and user accounts
+    Add, update, or remove system users
+    Monitor all cases
+    View reports and statistics
 
-User Story 4:
-As a Police Officer
-I want to create a new case
-So that criminal incidents can be recorded in the
-system.
+2️⃣ Police Officer
+    Create and manage criminal cases
+    Add suspects and evidence
+    Update case status
+    View assigned cases
+    Write reports
 
-User Story 5:
-As a Police Officer
-I want to update case information
+3️⃣ Detective/Investigator
+    Register incidents
+    Assign cases to officers
+    View active cases
 
-User Story 6:
-As a Detective
-I want to assign suspects to a case
-So that investigations can track potential criminals.
+⚙️ Features
+    Role-Based Access Control (Admin / Officer / Staff)
+    Case management system
+    Suspect and evidence tracking
+    Case status updates
+    Report generation
+    Secure authentication
 
-User Story 7:
-As a Police Officer
-I want to upload evidence related to a case
-So that all evidence is stored securely in one place.
+📍 Map-Based Crime Visualization
+    Display crime locations on an interactive map
+    View exact location where incidents occurred
+    Help officers quickly identify high-risk areas
+    Improve response time and decision-making
 
-User Story 8:
-As a Police Officer
-I want to create incident reports
-So that reported crimes are documented in the system.
-So that investigation details remain accurate and up
-to date.
+🧠 Innovative Feature
+
+
+
+The most innovative feature of this system is the crime location mapping.
+Instead of viewing cases only as text records, the system allows users to:
+    See crimes as markers on a map
+    Analyze patterns based on location
+    Improve investigation efficiency
+This adds a visual and analytical layer to traditional police systems.
+
+🎯 Purpose of the System
+    Improve case tracking
+    Reduce paperwork
+    Enhance coordination
+    Provide real-time geographic insights
+
+👩‍💻 Worked by
+    - Adorela Dashi
+    - Ester Alisufi
+    - Kaltrina Lala
+    - Amarildo Hazizi
+    - Drini Ziri
+    - Egzon Xheleshi
+    - Petro Boci
