@@ -4,9 +4,8 @@ The Police Management System (PMS) is a comprehensive web-based application desi
 
 It replaces traditional paper-based processes with a structured system that improves efficiency, data organization, communication, and real-time access to critical information.
 
----
 
-## 🌐 Overview
+### 🌐 Overview
 
 PMS integrates multiple police operations into a single platform, including:
 
@@ -19,9 +18,8 @@ PMS integrates multiple police operations into a single platform, including:
 
 The system follows a client-server architecture, allowing all users to access it through a web browser with synchronized real-time data.
 
----
 
-## 👥 User Roles
+### 👥 User Roles
 
 The system is built around six main user roles:
 
@@ -63,11 +61,10 @@ The system is built around six main user roles:
 - Submit complaints  
 - Report missing persons  
 - Track case status  
-- View traffic fines  
+- View traffic fines
 
----
 
-## ⚙️ Key Features
+### ⚙️ Key Features
 
 - Role-Based Access Control (RBAC)  
 - Secure authentication system  
@@ -80,7 +77,7 @@ The system is built around six main user roles:
 
 ---
 
-## 📍 System Highlights
+### 📍 System Highlights
 
 ### 🔐 Security & Access Control
 - Passwords are securely encrypted  
@@ -97,15 +94,13 @@ The system is built around six main user roles:
 - Chain of custody tracking  
 - Scientific reporting integrated into cases  
 
----
 
-## 🧠 Innovative Aspect
+### 🧠 Innovative Aspect
 
 One of the most innovative aspects of PMS is its full integration of multiple law enforcement domains into a single platform.
 
----
 
-## 🎯 Purpose of the System
+### 🎯 Purpose of the System
 
 - Improve case tracking and investigation workflows  
 - Reduce paperwork and manual errors  
@@ -113,26 +108,8 @@ One of the most innovative aspects of PMS is its full integration of multiple la
 - Provide real-time access to critical information  
 - Enable citizen interaction through a digital portal  
 
----
 
-## 🏗️ System Scope
-
-### ✅ In Scope
-- User authentication and role management  
-- Incident and case management  
-- Evidence and forensic analysis  
-- Traffic management  
-- Citizen portal  
-
-### ❌ Out of Scope
-- Integration with external systems (e.g., Interpol)  
-- GPS tracking or surveillance systems  
-- Mobile native applications (web-only system)  
-- Court/legal system integration  
-
----
-
-## 👩‍💻 Developed By
+### 👩‍💻 Developed By
 
 - Adorela Dashi  
 - Ester Alisufi  
