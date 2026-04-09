@@ -75,7 +75,6 @@ The system is built around six main user roles:
 - Citizen portal for public interaction  
 - Real-time dashboard and statistics  
 
----
 
 ### 📍 System Highlights
 
