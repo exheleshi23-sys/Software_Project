@@ -105,7 +105,7 @@ Citizen portal
 ❌ Out of Scope
 Integration with external systems (e.g., Interpol)
 GPS tracking or surveillance systems
-Mobile native apps (web-only system)
+Mobile native applications (web-only system)
 Court/legal system integration
 👩‍💻 Developed By
 Adorela Dashi
