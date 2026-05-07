@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "FDquLcQe9HA4BHDf3Rat0FI9AvXLuhbC1nQqS9v8VIc=",
+  "Source": "PoliceAuthBackend",
+  "BasePath": "_content/PoliceAuthBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

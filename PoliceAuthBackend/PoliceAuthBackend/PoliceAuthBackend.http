@@ -1,0 +1,6 @@
+@PoliceAuthBackend_HostAddress = http://localhost:5294
+
+GET {{PoliceAuthBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
