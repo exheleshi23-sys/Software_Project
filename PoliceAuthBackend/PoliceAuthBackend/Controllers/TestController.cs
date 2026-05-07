@@ -20,13 +20,13 @@ namespace PoliceAuthBackend.Controllers
             try
             {
                 using var conn = _dbContext.GetConnection();
-                conn.Open(); // 🔥 THIS is where connection is actually tested
+                conn.Open();
 
                 return Ok("Database connected successfully!");
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message); // shows real error
+                return BadRequest(ex.Message);
             }
         }
     }
