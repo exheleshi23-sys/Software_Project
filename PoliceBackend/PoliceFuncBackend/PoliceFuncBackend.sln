@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoliceFuncBackend", "PoliceFuncBackend\PoliceFuncBackend.csproj", "{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C20CBD94-D3E4-44EE-99D3-2D271F9A0950}
+	EndGlobalSection
+EndGlobal
