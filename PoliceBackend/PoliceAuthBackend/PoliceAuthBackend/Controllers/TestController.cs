@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PoliceAuthBackend.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace PoliceAuthBackend.Controllers
 {
@@ -12,6 +13,24 @@ namespace PoliceAuthBackend.Controllers
         public TestController(DbContext dbContext)
         {
             _dbContext = dbContext;
+        }
+
+        [HttpGet("debug-auth")]
+        public IActionResult DebugAuth()
+        {
+            var header = Request.Headers["Authorization"].ToString();
+
+            return Ok(new
+            {
+                authorizationHeader = header
+            });
+        }
+
+        [Authorize]
+        [HttpGet("test")]
+        public IActionResult Test()
+        {
+            return Ok("OK");
         }
 
         [HttpGet("db")]

@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "PoliceAuthBackend.Controllers.AuthController",
+    "Method": "ForgotPassword",
+    "RelativePath": "api/Auth/forgot-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "PoliceAuthBackend.Dtos.ForgotPasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceAuthBackend.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/Auth/login",
     "HttpMethod": "POST",
@@ -10,6 +26,22 @@
       {
         "Name": "req",
         "Type": "PoliceAuthBackend.Dtos.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceAuthBackend.Controllers.AuthController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/Auth/reset-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "PoliceAuthBackend.Dtos.ResetPasswordRequest",
         "IsRequired": true
       }
     ],
@@ -35,6 +67,26 @@
     "ContainingType": "PoliceAuthBackend.Controllers.TestController",
     "Method": "TestDb",
     "RelativePath": "api/Test/db",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceAuthBackend.Controllers.TestController",
+    "Method": "DebugAuth",
+    "RelativePath": "api/Test/debug-auth",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceAuthBackend.Controllers.TestController",
+    "Method": "Test",
+    "RelativePath": "api/Test/test",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

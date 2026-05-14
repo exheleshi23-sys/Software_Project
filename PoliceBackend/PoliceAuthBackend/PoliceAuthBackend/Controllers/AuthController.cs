@@ -9,18 +9,26 @@ namespace PoliceAuthBackend.Controllers
     public class AuthController : ControllerBase
     {
         private readonly AuthService _auth;
+
         private readonly EmailService _email;
+
+        private readonly IConfiguration _config;
 
         public AuthController(
             AuthService auth,
-            EmailService email)
+            EmailService email,
+            IConfiguration config)
         {
             _auth = auth;
+
             _email = email;
+
+            _config = config;
         }
 
         [HttpPost("login")]
-        public IActionResult Login(LoginRequest req)
+        public IActionResult Login(
+            LoginRequest req)
         {
             var user =
                 _auth.ValidateUser(
@@ -29,16 +37,24 @@ namespace PoliceAuthBackend.Controllers
                 );
 
             if (user == null)
-                return Unauthorized("Invalid credentials");
+                return Unauthorized(
+                    "Invalid credentials"
+                );
 
-            string code = _auth.GenerateOtp();
+            string code =
+                _auth.GenerateOtp();
 
-            _auth.SaveOtp(user.Id, code);
-
+            _auth.SaveOtp(
+                user.Id,
+                code
+            );
 
             try
             {
-                _email.SendOtp(user.Email, code);
+                _email.SendOtp(
+                    user.Email,
+                    code
+                );
             }
             catch (Exception ex)
             {
@@ -48,6 +64,7 @@ namespace PoliceAuthBackend.Controllers
                     error = ex.ToString()
                 });
             }
+
             return Ok(new
             {
                 message = "OTP sent",
@@ -56,7 +73,8 @@ namespace PoliceAuthBackend.Controllers
         }
 
         [HttpPost("verify")]
-        public IActionResult Verify(VerifyOtpRequest req)
+        public IActionResult Verify(
+            VerifyOtpRequest req)
         {
             bool valid =
                 _auth.VerifyOtp(
@@ -65,9 +83,93 @@ namespace PoliceAuthBackend.Controllers
                 );
 
             if (!valid)
-                return Unauthorized("Invalid OTP");
+                return Unauthorized(
+                    "Invalid OTP"
+                );
 
-            return Ok("Login successful");
+            var user =
+                _auth.GetUserById(
+                    req.User_Id
+                );
+
+            string token =
+                _auth.GenerateJwtToken(
+                    user,
+                    _config
+                );
+
+            return Ok(new
+            {
+                message = "Login successful",
+                token = token
+            });
+        }
+
+        [HttpPost("forgot-password")]
+        public IActionResult ForgotPassword(
+            ForgotPasswordRequest req)
+        {
+            var user =
+                _auth.GetUserByEmailOrUsername(
+                    req.EmailOrUsername
+                );
+
+            if (user == null)
+                return BadRequest(
+                    "User not found"
+                );
+
+            string code =
+                _auth.GenerateOtp();
+
+            _auth.SaveOtp(
+                user.Id,
+                code
+            );
+
+            _email.SendOtp(
+                user.Email,
+                code
+            );
+
+            return Ok(
+                "Reset code sent"
+            );
+        }
+
+        [HttpPost("reset-password")]
+        public IActionResult ResetPassword(
+            ResetPasswordRequest req)
+        {
+            var user =
+                _auth.GetUserByEmailOrUsername(
+                    req.EmailOrUsername
+                );
+
+            if (user == null)
+                return BadRequest(
+                    "User not found"
+                );
+
+            bool valid =
+                _auth.VerifyOtp(
+                    user.Id,
+                    req.Code
+                );
+
+            if (!valid)
+                return Unauthorized(
+                    "Invalid code"
+                );
+
+            _auth.UpdatePassword(
+                user.Id,
+                req.NewPassword
+            );
+
+            return Ok(
+                "Password updated"
+            );
         }
     }
 }
