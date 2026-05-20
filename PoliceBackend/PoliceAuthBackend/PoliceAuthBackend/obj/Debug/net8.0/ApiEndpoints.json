@@ -33,6 +33,22 @@
   },
   {
     "ContainingType": "PoliceAuthBackend.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "PoliceAuthBackend.Dtos.RegisterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceAuthBackend.Controllers.AuthController",
     "Method": "ResetPassword",
     "RelativePath": "api/Auth/reset-password",
     "HttpMethod": "POST",

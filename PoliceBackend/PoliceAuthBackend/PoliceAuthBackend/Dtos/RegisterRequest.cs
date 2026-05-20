@@ -1,6 +1,6 @@
-﻿namespace PoliceAuthBackend.Models
+﻿namespace PoliceAuthBackend.Dtos
 {
-    public class User
+    public class RegisterRequest
     {
         public String User_ID { get; set; }
 
@@ -25,12 +25,5 @@
         public DateTime Birth_Date { get; set; }
 
         public string? ProfilePhoto { get; set; }
-
-        public int Role_ID { get; set; }
-
-        public int Department_ID { get; set; }
-
-        public string Status { get; set; }
-            = "active";
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+
 using PoliceAuthBackend.Dtos;
 using PoliceAuthBackend.Services;
 
@@ -26,26 +27,54 @@ namespace PoliceAuthBackend.Controllers
             _config = config;
         }
 
+        [HttpPost("register")]
+        public IActionResult Register(
+            RegisterRequest req)
+        {
+            bool success =
+                _auth.RegisterUser( req);
+
+            if (!success)
+            {
+                return BadRequest(
+                    "User ID or Email already exists"
+                );
+            }
+
+            return Ok(
+                "User registered successfully"
+            );
+        }
+
         [HttpPost("login")]
         public IActionResult Login(
             LoginRequest req)
         {
             var user =
                 _auth.ValidateUser(
-                    req.Name,
+                    req.UserId,
                     req.Password
                 );
 
             if (user == null)
+            {
                 return Unauthorized(
                     "Invalid credentials"
                 );
+            }
+
+            if (user.Status.ToLower() == "suspended")
+            {
+                return Unauthorized(
+                    "Account suspended"
+                );
+            }
 
             string code =
                 _auth.GenerateOtp();
 
             _auth.SaveOtp(
-                user.Id,
+                user.User_ID,
                 code
             );
 
@@ -61,14 +90,14 @@ namespace PoliceAuthBackend.Controllers
                 return BadRequest(new
                 {
                     Message = "Email failed",
-                    error = ex.ToString()
+                    Error = ex.ToString()
                 });
             }
 
             return Ok(new
             {
                 message = "OTP sent",
-                userId = user.Id
+                userId = user.User_ID
             });
         }
 
@@ -83,14 +112,23 @@ namespace PoliceAuthBackend.Controllers
                 );
 
             if (!valid)
+            {
                 return Unauthorized(
                     "Invalid OTP"
                 );
+            }
 
             var user =
                 _auth.GetUserById(
                     req.User_Id
                 );
+
+            if (user == null)
+            {
+                return BadRequest(
+                    "User not found"
+                );
+            }
 
             string token =
                 _auth.GenerateJwtToken(
@@ -101,7 +139,25 @@ namespace PoliceAuthBackend.Controllers
             return Ok(new
             {
                 message = "Login successful",
-                token = token
+
+                token = token,
+
+                user = new
+                {
+                    id = user.User_ID,
+
+                    name = user.Name,
+
+                    surname = user.Surname,
+
+                    email = user.Email,
+
+                    role =
+                        user.Role_ID,
+
+                    department =
+                        user.Department_ID
+                }
             });
         }
 
@@ -115,22 +171,35 @@ namespace PoliceAuthBackend.Controllers
                 );
 
             if (user == null)
+            {
                 return BadRequest(
                     "User not found"
                 );
+            }
 
             string code =
                 _auth.GenerateOtp();
 
             _auth.SaveOtp(
-                user.Id,
+                user.User_ID,
                 code
             );
 
-            _email.SendOtp(
-                user.Email,
-                code
-            );
+            try
+            {
+                _email.SendOtp(
+                    user.Email,
+                    code
+                );
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new
+                {
+                    Message = "Email failed",
+                    Error = ex.ToString()
+                });
+            }
 
             return Ok(
                 "Reset code sent"
@@ -147,23 +216,27 @@ namespace PoliceAuthBackend.Controllers
                 );
 
             if (user == null)
+            {
                 return BadRequest(
                     "User not found"
                 );
+            }
 
             bool valid =
                 _auth.VerifyOtp(
-                    user.Id,
+                    user.User_ID,
                     req.Code
                 );
 
             if (!valid)
+            {
                 return Unauthorized(
                     "Invalid code"
                 );
+            }
 
             _auth.UpdatePassword(
-                user.Id,
+                user.User_ID,
                 req.NewPassword
             );
 

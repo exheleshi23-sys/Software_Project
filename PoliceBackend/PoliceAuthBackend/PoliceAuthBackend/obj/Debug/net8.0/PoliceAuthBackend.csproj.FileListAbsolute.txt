@@ -148,12 +148,6 @@ C:\Users\User\Desktop\schoo\PoliceAuthBackend\PoliceAuthBackend\obj\Debug\net8.0
 C:\Users\User\Desktop\schoo\PoliceAuthBackend\PoliceAuthBackend\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\User\Desktop\schoo\PoliceAuthBackend\PoliceAuthBackend\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\User\Desktop\schoo\PoliceAuthBackend\PoliceAuthBackend\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\User\Desktop\schoo\PoliceAuthBackend\PoliceAuthBackend\obj\Debug\net8.0\staticwebassets\msbuild.PoliceAuthBackend.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\User\Desktop\schoo\PoliceAuthBackend\PoliceAuthBackend\obj\Debug\net8.0\staticwebassets\msbuild.PoliceAuthBackend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\User\Desktop\schoo\PoliceAuthBackend\PoliceAuthBackend\obj\Debug\net8.0\staticwebassets\msbuild.build.PoliceAuthBackend.props
-C:\Users\User\Desktop\schoo\PoliceAuthBackend\PoliceAuthBackend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.PoliceAuthBackend.props
-C:\Users\User\Desktop\schoo\PoliceAuthBackend\PoliceAuthBackend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.PoliceAuthBackend.props
-C:\Users\User\Desktop\schoo\PoliceAuthBackend\PoliceAuthBackend\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\User\Desktop\schoo\PoliceAuthBackend\PoliceAuthBackend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\User\Desktop\schoo\PoliceAuthBackend\PoliceAuthBackend\obj\Debug\net8.0\PoliceAu.2895E2CE.Up2Date
 C:\Users\User\Desktop\schoo\PoliceAuthBackend\PoliceAuthBackend\obj\Debug\net8.0\PoliceAuthBackend.dll
@@ -169,3 +163,8 @@ C:\Users\User\Desktop\schoo\PoliceAuthBackend\PoliceAuthBackend\bin\Debug\net8.0
 C:\Users\User\Desktop\schoo\PoliceAuthBackend\PoliceAuthBackend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\User\Desktop\schoo\PoliceAuthBackend\PoliceAuthBackend\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\User\Desktop\schoo\PoliceAuthBackend\PoliceAuthBackend\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\User\Desktop\schoo\PoliceAuthBackend\PoliceAuthBackend\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\User\Desktop\schoo\PoliceAuthBackend\PoliceAuthBackend\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\User\Desktop\schoo\PoliceAuthBackend\PoliceAuthBackend\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\User\Desktop\schoo\PoliceAuthBackend\PoliceAuthBackend\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\User\Desktop\schoo\PoliceAuthBackend\PoliceAuthBackend\obj\Debug\net8.0\staticwebassets.build.json.cache

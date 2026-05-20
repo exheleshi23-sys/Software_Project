@@ -2,7 +2,7 @@
 {
     public class LoginOtp
     {
-        public int Id { get; set; }
+        public String Id { get; set; }
 
         public int User_ID { get; set; }
 
