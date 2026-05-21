@@ -16,7 +16,7 @@
 
         public string? Arrest_Record { get; set; }
 
-        public required int Officer_ID { get; set; }
+        public required String Officer_ID { get; set; }
 
         public int? Case_ID { get; set; }
     }

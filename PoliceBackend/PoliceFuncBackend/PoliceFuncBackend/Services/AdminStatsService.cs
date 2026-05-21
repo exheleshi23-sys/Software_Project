@@ -5,9 +5,9 @@ namespace PoliceFuncBackend.Services
 {
     public class AdminStatsService
     {
-        private readonly DbContext _db;
+        private readonly PoliceDbContext _db;
 
-        public AdminStatsService(DbContext db)
+        public AdminStatsService(PoliceDbContext db)
         {
             _db = db;
         }

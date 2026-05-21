@@ -6,9 +6,9 @@ namespace PoliceFuncBackend.Services
 {
     public class UserService
     {
-        private readonly DbContext _db;
+        private readonly PoliceDbContext _db;
 
-        public UserService(DbContext db)
+        public UserService(PoliceDbContext db)
         {
             _db = db;
         }
@@ -38,7 +38,7 @@ namespace PoliceFuncBackend.Services
             return users;
         }
 
-        public object GetUserById(int id) {
+        public object GetUserById(String id) {
             using var conn = _db.GetConnection();
             conn.Open();
 
@@ -61,7 +61,7 @@ namespace PoliceFuncBackend.Services
                     };
         }
 
-        public void UpdateUser(int id, UpdateUserDto dto) {
+        public void UpdateUser(String id, UpdateUserDto dto) {
             using var conn = _db.GetConnection();
             conn.Open();
 
@@ -85,7 +85,7 @@ namespace PoliceFuncBackend.Services
             cmd.ExecuteNonQuery();
         }
 
-        public void UpdateStatus(int id, string status) {
+        public void UpdateStatus(String id, string status) {
             using var conn = _db.GetConnection();
             conn.Open();
 
@@ -98,7 +98,7 @@ namespace PoliceFuncBackend.Services
             cmd.ExecuteNonQuery();
         }
 
-        public void UpdateRole(int id, int roleId)
+        public void UpdateRole(String id, int roleId)
         {
             using var conn = _db.GetConnection();
             conn.Open();

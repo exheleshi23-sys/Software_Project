@@ -4,7 +4,7 @@
     {
         public int Log_ID { get; set; }
 
-        public int User_ID { get; set; }
+        public String User_ID { get; set; }
 
         public required string Action { get; set; }
 

@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PoliceFuncBackend.Services;
 using PoliceFuncBackend.DTOs;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 
 namespace PoliceFuncBackend.Controllers
 {
@@ -8,9 +10,9 @@ namespace PoliceFuncBackend.Controllers
     [Route("api/cases")]
     public class CasesController : ControllerBase
     {
-        private readonly CaseService _caseService;
+        private readonly ICaseService _caseService;
 
-        public CasesController(CaseService caseService)
+        public CasesController(ICaseService caseService)
         {
             _caseService = caseService;
         }
@@ -27,11 +29,23 @@ namespace PoliceFuncBackend.Controllers
         }
 
         // GET /cases/my
+        [Authorize]
         [HttpGet("my")]
         public IActionResult GetMyCases()
         {
-            if (!IsOfficer()) return Unauthorized();
-            return Ok(_caseService.GetMyCases(1)); // replace with JWT later
+            // check role from JWT
+            var role = User.FindFirst(ClaimTypes.Role)?.Value;
+
+            if (role != "Officer")
+                return Forbid();
+
+            // get userId from JWT
+            var userId = User.FindFirst("userId")?.Value;
+
+            if (userId == null)
+                return Unauthorized();
+
+            return Ok(_caseService.GetMyCases(userId));
         }
 
         // GET /cases/:id
@@ -80,6 +94,45 @@ namespace PoliceFuncBackend.Controllers
             if (!IsOfficerPlus()) return Unauthorized();
             _caseService.AssignCase(id, dto.User_ID);
             return Ok();
+        }
+
+
+        // -----------------------------------
+        // GET CASE NOTES
+        // -----------------------------------
+        [HttpGet("{id}/notes")]
+        public async Task<IActionResult> GetCaseNotes(int id)
+        {
+            var notes =
+                await _caseService.GetCaseNotesAsync(id);
+
+            return Ok(notes);
+        }
+
+        // -----------------------------------
+        // ADD CASE NOTE
+        // -----------------------------------
+        [HttpPost("{id}/notes")]
+        public async Task<IActionResult> AddCaseNote(
+            int id,
+            [FromBody] CreateCaseNoteDto dto)
+        {
+            var note =
+                await _caseService.AddCaseNoteAsync(id, dto);
+
+            return Ok(note);
+        }
+
+        // -----------------------------------
+        // GET FORENSIC REPORTS
+        // -----------------------------------
+        [HttpGet("{id}/forensic-reports")]
+        public async Task<IActionResult> GetForensicReports(int id)
+        {
+            var reports =
+                await _caseService.GetForensicReportsAsync(id);
+
+            return Ok(reports);
         }
     }
 }

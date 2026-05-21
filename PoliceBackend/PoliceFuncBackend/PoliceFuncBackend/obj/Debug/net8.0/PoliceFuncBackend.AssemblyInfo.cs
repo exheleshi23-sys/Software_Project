@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PoliceFuncBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+848e4e0fd7696b58109a7ccf96aea59e9866e23c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("PoliceFuncBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PoliceFuncBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

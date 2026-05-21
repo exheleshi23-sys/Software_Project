@@ -2,6 +2,9 @@
 {
     public class UpdateStatusDto
     {
-        public required string Status { get; set; } // active / suspended
+        public required string Status
+        {
+            get; set;
+        }
     }
 }

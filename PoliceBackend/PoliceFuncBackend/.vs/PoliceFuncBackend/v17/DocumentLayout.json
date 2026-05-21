@@ -1,0 +1,1417 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\controllers\\suspectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\controllers\\suspectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\controllers\\forensicreportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\controllers\\forensicreportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\controllers\\casescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\controllers\\casescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\controllers\\admindepartmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\controllers\\admindepartmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\controllers\\arrestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\controllers\\arrestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\services\\icaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\services\\icaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\services\\suspectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\services\\suspectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\services\\forensicreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\services\\forensicreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\createforensicsreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\createforensicsreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\services\\evidenceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\services\\evidenceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\assignanalystdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\assignanalystdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\controllers\\evidencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\controllers\\evidencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\services\\caseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\services\\caseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\services\\citizenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\services\\citizenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\services\\ievidenceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\services\\ievidenceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\services\\iforensicreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\services\\iforensicreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\services\\isuspectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\services\\isuspectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\models\\suspect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\models\\suspect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\models\\forensicreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\models\\forensicreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\models\\evidence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\models\\evidence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\models\\casenote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\models\\casenote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\models\\case.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\models\\case.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\models\\citizenreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\models\\citizenreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\models\\fine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\models\\fine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\models\\accident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\models\\accident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\updatesuspectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\updatesuspectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\updateforensicreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\updateforensicreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\updateevidencestatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\updateevidencestatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\requestforensicdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\requestforensicdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\createsuspectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\createsuspectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\createcasenotedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\createcasenotedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\chainofcustodydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\chainofcustodydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\services\\fineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\services\\fineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\controllers\\incidentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\controllers\\incidentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\finedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\finedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\services\\iaccidentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\services\\iaccidentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\services\\accidentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\services\\accidentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\controllers\\vehiclescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\controllers\\vehiclescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\controllers\\finescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\controllers\\finescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\controllers\\citizencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\controllers\\citizencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\controllers\\accidentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\controllers\\accidentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\accidentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\accidentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\services\\icitizenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\services\\icitizenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\services\\ifineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\services\\ifineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\services\\ivehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\services\\ivehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\services\\vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\services\\vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\models\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\models\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\models\\rolepermissions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\models\\rolepermissions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\vehiclelookupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\vehiclelookupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\arreststatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\arreststatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\arrestcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\arrestcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\services\\incidentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\services\\incidentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\services\\adminlogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\services\\adminlogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\services\\adminreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\services\\adminreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\services\\adminstatsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\services\\adminstatsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\services\\arrestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\services\\arrestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\policefuncbackend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\policefuncbackend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\policefuncbackend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\policefuncbackend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\updatestatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\updatestatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\assigncasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\assigncasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\casedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\casedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\departmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\departmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\systemlogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\systemlogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\incidentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\incidentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\evidencetransferdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\evidencetransferdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\linkcasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\linkcasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\updatecasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\updatecasedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\updatedepartmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\updatedepartmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\updateincidentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\updateincidentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\updateroledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\updateroledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\dtos\\evidencecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\dtos\\evidencecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\controllers\\adminreportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\controllers\\adminreportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\controllers\\adminlogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\controllers\\adminlogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\controllers\\adminstatscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\controllers\\adminstatscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|c:\\users\\user\\desktop\\schoo\\policebackend\\policefuncbackend\\policefuncbackend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{70CC45BD-B6CB-4E7F-91CD-38B2CF4AEB15}|PoliceFuncBackend\\PoliceFuncBackend.csproj|solutionrelative:policefuncbackend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SuspectsController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\SuspectsController.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Controllers\\SuspectsController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\SuspectsController.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Controllers\\SuspectsController.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAmwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T01:48:37.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ForensicReportsController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\ForensicReportsController.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Controllers\\ForensicReportsController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\ForensicReportsController.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Controllers\\ForensicReportsController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAmwFsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T01:47:26.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CasesController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\CasesController.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Controllers\\CasesController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\CasesController.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Controllers\\CasesController.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAiwIUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T16:48:04.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Program.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Program.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Program.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADwAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T19:06:00.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ICaseService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\ICaseService.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Services\\ICaseService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\ICaseService.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Services\\ICaseService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA7wBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T01:19:05.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ArrestsController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\ArrestsController.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Controllers\\ArrestsController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\ArrestsController.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Controllers\\ArrestsController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAmwC8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T18:53:49.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminDepartmentsController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\AdminDepartmentsController.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Controllers\\AdminDepartmentsController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\AdminDepartmentsController.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Controllers\\AdminDepartmentsController.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAkwDoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T17:21:32.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SuspectService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\SuspectService.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Services\\SuspectService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\SuspectService.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Services\\SuspectService.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAqwKoAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T01:39:35.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ForensicReportService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\ForensicReportService.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Services\\ForensicReportService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\ForensicReportService.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Services\\ForensicReportService.cs",
+              "ViewState": "AgIAAEABAAAAAAAAAAAAwOYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T01:36:38.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EvidenceService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\EvidenceService.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Services\\EvidenceService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\EvidenceService.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Services\\EvidenceService.cs",
+              "ViewState": "AgIAABcBAAAAAAAAAAAuwCUBAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T18:31:02.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CaseService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\CaseService.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Services\\CaseService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\CaseService.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Services\\CaseService.cs",
+              "ViewState": "AgIAAC4BAAAAAAAAAAAqwEYBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T16:49:06.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CreateForensicsReportDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\CreateForensicsReportDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\CreateForensicsReportDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\CreateForensicsReportDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\CreateForensicsReportDto.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAswBIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T01:01:49.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EvidenceController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\EvidenceController.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Controllers\\EvidenceController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\EvidenceController.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Controllers\\EvidenceController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAmwDIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T18:31:32.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AssignAnalystDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\AssignAnalystDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\AssignAnalystDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\AssignAnalystDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\AssignAnalystDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T00:59:00.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CitizenService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\CitizenService.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Services\\CitizenService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\CitizenService.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Services\\CitizenService.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAmwIUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T23:56:56.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IEvidenceService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\IEvidenceService.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Services\\IEvidenceService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\IEvidenceService.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Services\\IEvidenceService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T01:17:27.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IForensicReportService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\IForensicReportService.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Services\\IForensicReportService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\IForensicReportService.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Services\\IForensicReportService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T01:17:01.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ISuspectService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\ISuspectService.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Services\\ISuspectService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\ISuspectService.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Services\\ISuspectService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T01:16:26.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Suspect.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Models\\Suspect.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Models\\Suspect.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Models\\Suspect.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Models\\Suspect.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T01:15:21.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ForensicReport.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Models\\ForensicReport.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Models\\ForensicReport.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Models\\ForensicReport.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Models\\ForensicReport.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T01:08:45.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Evidence.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Models\\Evidence.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Models\\Evidence.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Models\\Evidence.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Models\\Evidence.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T01:08:10.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CaseNote.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Models\\CaseNote.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Models\\CaseNote.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Models\\CaseNote.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Models\\CaseNote.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T01:07:14.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Case.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Models\\Case.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Models\\Case.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Models\\Case.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Models\\Case.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA1wAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T01:06:03.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UpdateSuspectDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\UpdateSuspectDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\UpdateSuspectDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\UpdateSuspectDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\UpdateSuspectDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T01:05:05.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CitizenReport.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Models\\CitizenReport.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Models\\CitizenReport.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Models\\CitizenReport.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Models\\CitizenReport.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T00:03:22.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Accident.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Models\\Accident.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Models\\Accident.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Models\\Accident.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Models\\Accident.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T23:52:28.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Fine.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Models\\Fine.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Models\\Fine.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Models\\Fine.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Models\\Fine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T23:53:05.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Models\\Enums.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Models\\Enums.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Models\\Enums.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Models\\Enums.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T23:53:44.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UpdateForensicReportDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\UpdateForensicReportDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\UpdateForensicReportDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\UpdateForensicReportDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\UpdateForensicReportDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T01:04:25.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "UpdateEvidenceStatusDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\UpdateEvidenceStatusDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\UpdateEvidenceStatusDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\UpdateEvidenceStatusDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\UpdateEvidenceStatusDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T01:03:47.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "RequestForensicDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\RequestForensicDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\RequestForensicDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\RequestForensicDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\RequestForensicDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T01:03:11.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CreateSuspectDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\CreateSuspectDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\CreateSuspectDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\CreateSuspectDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\CreateSuspectDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T01:02:13.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CreateCaseNoteDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\CreateCaseNoteDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\CreateCaseNoteDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\CreateCaseNoteDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\CreateCaseNoteDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T01:00:40.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ChainOfCustodyDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\ChainOfCustodyDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\ChainOfCustodyDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\ChainOfCustodyDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\ChainOfCustodyDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T00:59:39.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "IAccidentService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\IAccidentService.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Services\\IAccidentService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\IAccidentService.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Services\\IAccidentService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA6wBEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T00:01:20.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "FineService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\FineService.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Services\\FineService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\FineService.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Services\\FineService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T23:58:30.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "FineDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\FineDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\FineDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\FineDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\FineDto.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAswB0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T23:44:55.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "IncidentsController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\IncidentsController.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Controllers\\IncidentsController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\IncidentsController.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Controllers\\IncidentsController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwCwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T16:48:15.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "AccidentService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\AccidentService.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Services\\AccidentService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\AccidentService.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Services\\AccidentService.cs",
+              "ViewState": "AgIAAK0AAAAAAAAAAAAiwLgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T23:55:15.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "VehiclesController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\VehiclesController.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Controllers\\VehiclesController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\VehiclesController.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Controllers\\VehiclesController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA0wBMAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T00:46:20.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "FinesController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\FinesController.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Controllers\\FinesController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\FinesController.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Controllers\\FinesController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAiwFAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T00:45:46.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "CitizenController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\CitizenController.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Controllers\\CitizenController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\CitizenController.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Controllers\\CitizenController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAcwE4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T00:45:09.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "AccidentsController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\AccidentsController.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Controllers\\AccidentsController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\AccidentsController.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Controllers\\AccidentsController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAADwvxMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T00:43:51.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "IFineService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\IFineService.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Services\\IFineService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\IFineService.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Services\\IFineService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T00:11:11.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ICitizenService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\ICitizenService.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Services\\ICitizenService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\ICitizenService.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Services\\ICitizenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T00:02:03.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "AccidentDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\AccidentDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\AccidentDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\AccidentDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\AccidentDto.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAwC4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T23:44:37.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "IVehicleService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\IVehicleService.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Services\\IVehicleService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\IVehicleService.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Services\\IVehicleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T00:14:08.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "VehicleService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\VehicleService.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Services\\VehicleService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\VehicleService.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Services\\VehicleService.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAiwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T00:15:30.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\UserService.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Services\\UserService.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAgwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T16:49:00.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Vehicle.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Models\\Vehicle.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Models\\Vehicle.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Models\\Vehicle.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Models\\Vehicle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T23:53:26.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "VehicleLookupDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\VehicleLookupDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\VehicleLookupDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\VehicleLookupDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\VehicleLookupDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T23:45:15.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "ArrestStatusDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\ArrestStatusDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\ArrestStatusDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\ArrestStatusDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\ArrestStatusDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T18:53:11.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "RolePermissions.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Models\\RolePermissions.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Models\\RolePermissions.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Models\\RolePermissions.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Models\\RolePermissions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T16:56:35.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "IncidentService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\IncidentService.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Services\\IncidentService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\IncidentService.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Services\\IncidentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T16:49:12.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "RoleService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\RoleService.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Services\\RoleService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\RoleService.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Services\\RoleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T16:57:34.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "ArrestCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\ArrestCreateDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\ArrestCreateDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\ArrestCreateDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\ArrestCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T18:52:45.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "DepartmentService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\DepartmentService.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Services\\DepartmentService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\DepartmentService.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Services\\DepartmentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T17:20:34.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "AdminLogService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\AdminLogService.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Services\\AdminLogService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\AdminLogService.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Services\\AdminLogService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T17:34:38.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "AdminReportService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\AdminReportService.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Services\\AdminReportService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\AdminReportService.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Services\\AdminReportService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T17:34:57.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "AdminStatsService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\AdminStatsService.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Services\\AdminStatsService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\AdminStatsService.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Services\\AdminStatsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T17:33:55.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "ArrestService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\ArrestService.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Services\\ArrestService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\ArrestService.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Services\\ArrestService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T18:53:27.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Services\\AuthService.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T16:57:58.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "DbContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Data\\DbContext.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Data\\DbContext.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Data\\DbContext.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Data\\DbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T19:06:38.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "PoliceFuncBackend.http",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\PoliceFuncBackend.http",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\PoliceFuncBackend.http",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\PoliceFuncBackend.http",
+              "RelativeToolTip": "PoliceFuncBackend\\PoliceFuncBackend.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-05-11T19:10:31.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\appsettings.json",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\appsettings.json",
+              "RelativeToolTip": "PoliceFuncBackend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-14T10:57:02.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\appsettings.Development.json",
+              "RelativeToolTip": "PoliceFuncBackend\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-11T19:10:33.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "PoliceFuncBackend.csproj",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\PoliceFuncBackend.csproj",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\PoliceFuncBackend.csproj",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\PoliceFuncBackend.csproj",
+              "RelativeToolTip": "PoliceFuncBackend\\PoliceFuncBackend.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-11T19:05:46.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAADwv3sAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T16:47:55.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "CaseDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\CaseDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\CaseDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\CaseDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\CaseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T16:48:38.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "AssignCaseDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\AssignCaseDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\AssignCaseDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\AssignCaseDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\AssignCaseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T17:50:00.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "UpdateStatusDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\UpdateStatusDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\UpdateStatusDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\UpdateStatusDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\UpdateStatusDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T17:09:37.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "DepartmentDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\DepartmentDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\DepartmentDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\DepartmentDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\DepartmentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T17:19:55.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "SystemLogDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\SystemLogDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\SystemLogDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\SystemLogDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\SystemLogDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T17:36:26.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "IncidentDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\IncidentDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\IncidentDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\IncidentDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\IncidentDto.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T16:48:47.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "EvidenceTransferDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\EvidenceTransferDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\EvidenceTransferDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\EvidenceTransferDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\EvidenceTransferDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T18:29:37.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "LinkCaseDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\LinkCaseDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\LinkCaseDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\LinkCaseDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\LinkCaseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T17:58:31.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "UpdateCaseDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\UpdateCaseDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\UpdateCaseDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\UpdateCaseDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\UpdateCaseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T17:49:02.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "UpdateDepartmentDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\UpdateDepartmentDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\UpdateDepartmentDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\UpdateDepartmentDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\UpdateDepartmentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T17:20:13.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "UpdateIncidentDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\UpdateIncidentDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\UpdateIncidentDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\UpdateIncidentDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\UpdateIncidentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T17:58:16.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "UpdateRoleDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\UpdateRoleDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\UpdateRoleDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\UpdateRoleDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\UpdateRoleDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T17:09:52.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\UserDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\UserDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\UserDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T16:48:30.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "UpdateUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\UpdateUserDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\UpdateUserDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\UpdateUserDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\UpdateUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T17:08:57.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "EvidenceCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\EvidenceCreateDto.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\DTOs\\EvidenceCreateDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\DTOs\\EvidenceCreateDto.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\DTOs\\EvidenceCreateDto.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T18:29:21.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "AdminReportsController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\AdminReportsController.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Controllers\\AdminReportsController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\AdminReportsController.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Controllers\\AdminReportsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T17:35:42.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "AdminLogsController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\AdminLogsController.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Controllers\\AdminLogsController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\AdminLogsController.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Controllers\\AdminLogsController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwBkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T17:35:26.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "AdminStatsController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\AdminStatsController.cs",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Controllers\\AdminStatsController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Controllers\\AdminStatsController.cs",
+              "RelativeToolTip": "PoliceFuncBackend\\Controllers\\AdminStatsController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAkwCcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T17:35:12.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "PoliceFuncBackend\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\User\\Desktop\\schoo\\PoliceBackend\\PoliceFuncBackend\\PoliceFuncBackend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "PoliceFuncBackend\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-12T16:23:20.794Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

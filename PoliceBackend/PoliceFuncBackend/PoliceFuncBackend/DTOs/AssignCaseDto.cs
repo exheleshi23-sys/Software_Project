@@ -2,6 +2,6 @@
 {
     public class AssignCaseDto
     {
-        public int User_ID { get; set; } 
+        public String User_ID { get; set; } 
     }
 }

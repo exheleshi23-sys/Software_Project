@@ -3,11 +3,11 @@ using MySql.Data.MySqlClient;
 
 namespace PoliceFuncBackend.Data
 {
-    public class DbContext
+    public class PoliceDbContext
     {
         private readonly IConfiguration _config;
 
-        public DbContext(IConfiguration config)
+        public PoliceDbContext(IConfiguration config)
         {
             _config = config;
         }
@@ -16,7 +16,7 @@ namespace PoliceFuncBackend.Data
         {
             return new MySqlConnection(
                 _config.GetConnectionString("PoliceDb")
-                );
+            );
         }
     }
 }

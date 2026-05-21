@@ -6,9 +6,9 @@ namespace PoliceFuncBackend.Services
 {
     public class ArrestService
     {
-        private readonly DbContext _db;
+        private readonly PoliceDbContext _db;
 
-        public ArrestService(DbContext db)
+        public ArrestService( PoliceDbContext db)
         {
             _db = db;
         }
@@ -40,7 +40,7 @@ namespace PoliceFuncBackend.Services
         }
 
         // GET /api/arrests/:id
-        public object? GetById(int id)
+        public object? GetById(String id)
         {
             using var conn = _db.GetConnection();
             conn.Open();
@@ -89,7 +89,7 @@ namespace PoliceFuncBackend.Services
         }
 
         // PUT /api/arrests/:id/status
-        public void UpdateStatus(int id, string status)
+        public void UpdateStatus(String id, string status)
         {
             using var conn = _db.GetConnection();
             conn.Open();

@@ -1,14 +1,15 @@
 ﻿using MySql.Data.MySqlClient;
 using PoliceFuncBackend.Data;
 using PoliceFuncBackend.DTOs;
+using PoliceFuncBackend.Models;
 
 namespace PoliceFuncBackend.Services
 {
-    public class CaseService
+    public class CaseService : ICaseService
     {
-        private readonly DbContext _db;
+        private readonly PoliceDbContext _db;
 
-        public CaseService(DbContext db)
+        public CaseService(PoliceDbContext db)
         {
             _db = db;
         }
@@ -143,7 +144,7 @@ namespace PoliceFuncBackend.Services
         }
 
         // ASSIGN CASE
-        public void AssignCase(int caseId, int userId)
+        public void AssignCase(int caseId, String userId)
         {
             using var conn = _db.GetConnection();
             conn.Open();
@@ -158,7 +159,7 @@ namespace PoliceFuncBackend.Services
         }
 
         // CASES FOR OFFICER
-        public List<object> GetMyCases(int officerId)
+        public List<object> GetMyCases(String officerId)
         {
             using var conn = _db.GetConnection();
             conn.Open();
@@ -186,6 +187,141 @@ namespace PoliceFuncBackend.Services
             }
 
             return list;
+        }
+
+    public async Task<List<Case>> GetAssignedCasesAsync()
+        {
+            var cases = new List<Case>();
+
+            using var conn = _db.GetConnection();
+            await conn.OpenAsync();
+
+            string query = @"
+        SELECT Case_ID, Case_Type, Title, Description, Status, OpenDate, CloseDate, Priority
+        FROM cases";
+
+            using var cmd = new MySqlCommand(query, conn);
+            using var reader = await cmd.ExecuteReaderAsync();
+
+            while (await reader.ReadAsync())
+            {
+                cases.Add(new Case
+                {
+                    Case_ID = reader.GetInt32(reader.GetOrdinal("Case_ID")),
+                    Case_Type = reader.GetString(reader.GetOrdinal("Case_Type")),
+                    Title = reader.GetString(reader.GetOrdinal("Title")),
+                    Description = reader.GetString(reader.GetOrdinal("Description")),
+                    Status = reader.GetString(reader.GetOrdinal("Status")),
+                    OpenDate = reader.GetDateTime(reader.GetOrdinal("OpenDate")),
+                    CloseDate = reader.GetDateTime(reader.GetOrdinal("CloseDate")),
+                    Priority = reader.IsDBNull(reader.GetOrdinal("Priority"))
+                        ? null
+                        : reader.GetString(reader.GetOrdinal("Priority"))
+                });
+            }
+
+            return cases;
+        }
+
+        public async Task<List<CaseNote>> GetCaseNotesAsync(int caseId)
+        {
+            var notes = new List<CaseNote>();
+
+            using var conn = _db.GetConnection();
+            await conn.OpenAsync();
+
+            string query = @"
+        SELECT Note_ID, Case_ID, Note_Text, Created_At
+        FROM case_notes
+        WHERE Case_ID = @Case_ID";
+
+            using var cmd = new MySqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@Case_ID", caseId);
+
+            using var reader = await cmd.ExecuteReaderAsync();
+
+            while (await reader.ReadAsync())
+            {
+                notes.Add(new CaseNote
+                {
+                    Note_ID = reader.GetInt32(reader.GetOrdinal("Note_ID")),
+                    Case_ID = reader.GetInt32(reader.GetOrdinal("Case_ID")),
+                    Note_Text = reader.GetString(reader.GetOrdinal("Note_Text")),
+                    Created_At = reader.GetDateTime(reader.GetOrdinal("Created_At"))
+                });
+            }
+
+            return notes;
+        }
+
+        public async Task<CaseNote> AddCaseNoteAsync(int caseId, CreateCaseNoteDto dto)
+        {
+            using var conn = _db.GetConnection();
+            await conn.OpenAsync();
+
+            int noteId = new Random().Next(1000, 999999);
+            DateTime createdAt = DateTime.UtcNow;
+
+            string query = @"
+        INSERT INTO case_notes
+        (Note_ID, Case_ID, Note_Text, Created_At)
+        VALUES (@Note_ID, @Case_ID, @Note_Text, @Created_At)";
+
+            using var cmd = new MySqlCommand(query, conn);
+
+            cmd.Parameters.AddWithValue("@Note_ID", noteId);
+            cmd.Parameters.AddWithValue("@Case_ID", caseId);
+            cmd.Parameters.AddWithValue("@Note_Text", dto.Note_Text);
+            cmd.Parameters.AddWithValue("@Created_At", createdAt);
+
+            await cmd.ExecuteNonQueryAsync();
+
+            return new CaseNote
+            {
+                Note_ID = noteId,
+                Case_ID = caseId,
+                Note_Text = dto.Note_Text,
+                Created_At = createdAt
+            };
+        }
+
+        public async Task<List<ForensicReport>> GetForensicReportsAsync(int caseId)
+        {
+            var reports = new List<ForensicReport>();
+
+            using var conn = _db.GetConnection();
+            await conn.OpenAsync();
+
+            string query = @"
+        SELECT ir.*
+        FROM investigation_report ir
+        INNER JOIN incident_report rp ON ir.Report_ID = rp.Report_ID
+        WHERE rp.Case_ID = @Case_ID";
+
+            using var cmd = new MySqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@Case_ID", caseId);
+
+            using var reader = await cmd.ExecuteReaderAsync();
+
+            while (await reader.ReadAsync())
+            {
+                reports.Add(new ForensicReport
+                {
+                    Investigation_ID = reader.GetInt32(reader.GetOrdinal("Investigation_ID")),
+                    Investigation_Status = reader.GetString(reader.GetOrdinal("Investigation_Status")),
+                    Summary = reader.GetString(reader.GetOrdinal("Summary")),
+                    Evidence_analysis = reader.GetString(reader.GetOrdinal("Evidence_analysis")),
+                    Suspect_assessment = reader.GetString(reader.GetOrdinal("Suspect_assessment")),
+                    Investigative_Conclusions = reader.GetString(reader.GetOrdinal("Investigative_Conclusions")),
+                    Evidence = reader.GetString(reader.GetOrdinal("Evidence")),
+                    Report_ID = reader.GetInt32(reader.GetOrdinal("Report_ID")),
+                    Detective_ID = reader.IsDBNull(reader.GetOrdinal("Detective_ID"))
+                        ? null
+                        : reader.GetString(reader.GetOrdinal("Detective_ID"))
+                });
+            }
+
+            return reports;
         }
     }
 }

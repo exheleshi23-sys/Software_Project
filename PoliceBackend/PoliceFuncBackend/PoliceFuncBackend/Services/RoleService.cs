@@ -5,9 +5,9 @@ namespace PoliceFuncBackend.Services
 {
     public class RoleService
     {
-        private readonly DbContext _db;
+        private readonly PoliceDbContext _db;
 
-        public RoleService(DbContext db)
+        public RoleService(PoliceDbContext db)
         {
             _db = db;
         }

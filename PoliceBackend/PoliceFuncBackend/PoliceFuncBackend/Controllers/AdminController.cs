@@ -1,6 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using PoliceFuncBackend.Services;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PoliceFuncBackend.DTOs;
+using PoliceFuncBackend.Services;
 
 namespace PoliceFuncBackend.Controllers
 {
@@ -40,7 +41,7 @@ namespace PoliceFuncBackend.Controllers
         // GET USER BY ID
         // -----------------------------
         [HttpGet("{id}")]
-        public IActionResult GetUserById(int id)
+        public IActionResult GetUserById(String id)
         {
             if (!IsAdmin())
                 return Unauthorized();
@@ -51,6 +52,13 @@ namespace PoliceFuncBackend.Controllers
                 return NotFound("User not found");
 
             return Ok(user);
+        }
+
+        [Authorize]
+        [HttpGet("test")]
+        public IActionResult Test()
+        {
+            return Ok("You are authenticated");
         }
 
         // -----------------------------
@@ -70,7 +78,7 @@ namespace PoliceFuncBackend.Controllers
         // UPDATE USER INFO
         // -----------------------------
         [HttpPut("{id}")]
-        public IActionResult UpdateUser(int id, UpdateUserDto dto)
+        public IActionResult UpdateUser(String id, UpdateUserDto dto)
         {
             if (!IsAdmin())
                 return Unauthorized();
@@ -83,7 +91,7 @@ namespace PoliceFuncBackend.Controllers
         // DELETE USER (SOFT DELETE)
         // -----------------------------
         [HttpDelete("{id}")]
-        public IActionResult DeleteUser(int id)
+        public IActionResult DeleteUser(String id)
         {
             if (!IsAdmin())
                 return Unauthorized();
@@ -97,7 +105,7 @@ namespace PoliceFuncBackend.Controllers
         // /api/admin/users/:id/status
         // -----------------------------
         [HttpPut("{id}/status")]
-        public IActionResult UpdateStatus(int id, UpdateStatusDto dto)
+        public IActionResult UpdateStatus(String id, UpdateStatusDto dto)
         {
             if (!IsAdmin())
                 return Unauthorized();
@@ -114,7 +122,7 @@ namespace PoliceFuncBackend.Controllers
         // /api/admin/users/:id/role
         // -----------------------------
         [HttpPut("{id}/role")]
-        public IActionResult UpdateRole(int id, UpdateRoleDto dto)
+        public IActionResult UpdateRole(String id, UpdateRoleDto dto)
         {
             if (!IsAdmin())
                 return Unauthorized();

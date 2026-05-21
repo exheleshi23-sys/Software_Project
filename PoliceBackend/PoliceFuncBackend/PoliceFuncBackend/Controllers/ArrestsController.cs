@@ -27,7 +27,7 @@ namespace PoliceFuncBackend.Controllers
         // GET /api/arrests/:id
         [HttpGet("{id}")]
         [Authorize(Roles = "Officer,Admin")]
-        public IActionResult GetById(int id)
+        public IActionResult GetById(String id)
         {
             var result = _service.GetById(id);
             if (result == null) return NotFound();
@@ -46,7 +46,7 @@ namespace PoliceFuncBackend.Controllers
         // PUT /api/arrests/:id/status
         [HttpPut("{id}/status")]
         [Authorize(Roles = "Officer,Admin")]
-        public IActionResult UpdateStatus(int id, [FromBody] ArrestStatusDto dto)
+        public IActionResult UpdateStatus(String id, [FromBody] ArrestStatusDto dto)
         {
             _service.UpdateStatus(id, dto.Status);
             return Ok("Status updated");

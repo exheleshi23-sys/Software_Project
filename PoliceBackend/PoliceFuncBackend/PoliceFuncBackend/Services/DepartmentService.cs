@@ -6,9 +6,9 @@ namespace PoliceFuncBackend.Services
 {
     public class DepartmentService
     {
-        private readonly DbContext _db;
+        private readonly PoliceDbContext _db;
 
-        public DepartmentService(DbContext db)
+        public DepartmentService(PoliceDbContext db)
         {
             _db = db;
         }

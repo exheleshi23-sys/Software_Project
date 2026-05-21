@@ -1,0 +1,1071 @@
+[
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.AccidentsController",
+    "Method": "GetAccidents",
+    "RelativePath": "api/accidents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.AccidentsController",
+    "Method": "ReportAccident",
+    "RelativePath": "api/accidents",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PoliceFuncBackend.DTOs.CreateAccidentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.AccidentsController",
+    "Method": "GetAccident",
+    "RelativePath": "api/accidents/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.AccidentsController",
+    "Method": "UpdateAccident",
+    "RelativePath": "api/accidents/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PoliceFuncBackend.DTOs.UpdateAccidentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.AdminDepartmentsController",
+    "Method": "GetAll",
+    "RelativePath": "api/admin/departments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.AdminDepartmentsController",
+    "Method": "Create",
+    "RelativePath": "api/admin/departments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PoliceFuncBackend.DTOs.DepartmentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.AdminDepartmentsController",
+    "Method": "Update",
+    "RelativePath": "api/admin/departments/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PoliceFuncBackend.DTOs.UpdateDepartmentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.AdminDepartmentsController",
+    "Method": "Delete",
+    "RelativePath": "api/admin/departments/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.AdminLogsController",
+    "Method": "GetLogs",
+    "RelativePath": "api/admin/logs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.AdminReportsController",
+    "Method": "Export",
+    "RelativePath": "api/admin/reports/export",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.AdminStatsController",
+    "Method": "CasesByType",
+    "RelativePath": "api/admin/stats/cases-by-type",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.AdminStatsController",
+    "Method": "MonthlyActivity",
+    "RelativePath": "api/admin/stats/monthly-activity",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.AdminStatsController",
+    "Method": "Overview",
+    "RelativePath": "api/admin/stats/overview",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.AdminController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/admin/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.AdminController",
+    "Method": "CreateUser",
+    "RelativePath": "api/admin/users",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PoliceFuncBackend.DTOs.UserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.AdminController",
+    "Method": "GetUserById",
+    "RelativePath": "api/admin/users/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.AdminController",
+    "Method": "UpdateUser",
+    "RelativePath": "api/admin/users/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PoliceFuncBackend.DTOs.UpdateUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.AdminController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/admin/users/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.AdminController",
+    "Method": "UpdateRole",
+    "RelativePath": "api/admin/users/{id}/role",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PoliceFuncBackend.DTOs.UpdateRoleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.AdminController",
+    "Method": "UpdateStatus",
+    "RelativePath": "api/admin/users/{id}/status",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PoliceFuncBackend.DTOs.UpdateStatusDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.AdminController",
+    "Method": "Test",
+    "RelativePath": "api/admin/users/test",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.ArrestsController",
+    "Method": "GetAll",
+    "RelativePath": "api/arrests",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.ArrestsController",
+    "Method": "Create",
+    "RelativePath": "api/arrests",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PoliceFuncBackend.DTOs.ArrestCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.ArrestsController",
+    "Method": "GetById",
+    "RelativePath": "api/arrests/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.ArrestsController",
+    "Method": "UpdateStatus",
+    "RelativePath": "api/arrests/{id}/status",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PoliceFuncBackend.DTOs.ArrestStatusDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.CasesController",
+    "Method": "GetCases",
+    "RelativePath": "api/cases",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "priority",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.CasesController",
+    "Method": "Create",
+    "RelativePath": "api/cases",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PoliceFuncBackend.DTOs.CaseDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.CasesController",
+    "Method": "GetCase",
+    "RelativePath": "api/cases/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.CasesController",
+    "Method": "Update",
+    "RelativePath": "api/cases/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PoliceFuncBackend.DTOs.UpdateCaseDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.CasesController",
+    "Method": "Assign",
+    "RelativePath": "api/cases/{id}/assign",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PoliceFuncBackend.DTOs.AssignCaseDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.CasesController",
+    "Method": "GetForensicReports",
+    "RelativePath": "api/cases/{id}/forensic-reports",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.CasesController",
+    "Method": "GetCaseNotes",
+    "RelativePath": "api/cases/{id}/notes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.CasesController",
+    "Method": "AddCaseNote",
+    "RelativePath": "api/cases/{id}/notes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PoliceFuncBackend.DTOs.CreateCaseNoteDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.CasesController",
+    "Method": "UpdateStatus",
+    "RelativePath": "api/cases/{id}/status",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.CasesController",
+    "Method": "GetMyCases",
+    "RelativePath": "api/cases/my",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.CitizenController",
+    "Method": "GetFines",
+    "RelativePath": "api/citizen/fines",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.CitizenController",
+    "Method": "Pay",
+    "RelativePath": "api/citizen/fines/{id}/pay",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.CitizenController",
+    "Method": "GetProfile",
+    "RelativePath": "api/citizen/profile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.CitizenController",
+    "Method": "GetReports",
+    "RelativePath": "api/citizen/reports",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.CitizenController",
+    "Method": "PostReport",
+    "RelativePath": "api/citizen/reports",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "report",
+        "Type": "PoliceFuncBackend.Models.CitizenReport",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.EvidenceController",
+    "Method": "GetAll",
+    "RelativePath": "api/evidence",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "case_id",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.EvidenceController",
+    "Method": "Create",
+    "RelativePath": "api/evidence",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PoliceFuncBackend.DTOs.EvidenceCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.EvidenceController",
+    "Method": "GetById",
+    "RelativePath": "api/evidence/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.EvidenceController",
+    "Method": "Transfer",
+    "RelativePath": "api/evidence/{id}/transfer",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PoliceFuncBackend.DTOs.EvidenceTransferDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.FinesController",
+    "Method": "GetFines",
+    "RelativePath": "api/fines",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "date",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "plate",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.FinesController",
+    "Method": "CreateFine",
+    "RelativePath": "api/fines",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Amount",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IssueDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "DueDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "FineStatus",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Violation_ID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Photo",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.FinesController",
+    "Method": "GetFine",
+    "RelativePath": "api/fines/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.FinesController",
+    "Method": "CancelFine",
+    "RelativePath": "api/fines/{id}/cancel",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.FinesController",
+    "Method": "GetStatsByType",
+    "RelativePath": "api/fines/stats/by-type",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.FinesController",
+    "Method": "GetDailyStats",
+    "RelativePath": "api/fines/stats/daily",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.ForensicReportsController",
+    "Method": "GetReports",
+    "RelativePath": "api/forensic-reports",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "case_id",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.ForensicReportsController",
+    "Method": "CreateReport",
+    "RelativePath": "api/forensic-reports",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PoliceFuncBackend.DTOs.CreateForensicReportDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.ForensicReportsController",
+    "Method": "GetReportById",
+    "RelativePath": "api/forensic-reports/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.ForensicReportsController",
+    "Method": "UpdateReport",
+    "RelativePath": "api/forensic-reports/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PoliceFuncBackend.DTOs.UpdateForensicReportDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.ForensicReportsController",
+    "Method": "SubmitReport",
+    "RelativePath": "api/forensic-reports/{id}/submit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.IncidentsController",
+    "Method": "Get",
+    "RelativePath": "api/incidents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.IncidentsController",
+    "Method": "Create",
+    "RelativePath": "api/incidents",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PoliceFuncBackend.DTOs.IncidentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.IncidentsController",
+    "Method": "GetById",
+    "RelativePath": "api/incidents/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.IncidentsController",
+    "Method": "Update",
+    "RelativePath": "api/incidents/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PoliceFuncBackend.DTOs.UpdateIncidentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.IncidentsController",
+    "Method": "Link",
+    "RelativePath": "api/incidents/{id}/link-case",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PoliceFuncBackend.DTOs.LinkCaseDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.SuspectsController",
+    "Method": "GetAllSuspects",
+    "RelativePath": "api/suspects",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.SuspectsController",
+    "Method": "CreateSuspect",
+    "RelativePath": "api/suspects",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PoliceFuncBackend.DTOs.CreateSuspectDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.SuspectsController",
+    "Method": "GetSuspectById",
+    "RelativePath": "api/suspects/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.SuspectsController",
+    "Method": "UpdateSuspect",
+    "RelativePath": "api/suspects/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PoliceFuncBackend.DTOs.UpdateSuspectDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.SuspectsController",
+    "Method": "DeleteSuspect",
+    "RelativePath": "api/suspects/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PoliceFuncBackend.Controllers.VehiclesController",
+    "Method": "LookupVehicle",
+    "RelativePath": "api/vehicles/lookup/{plate}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "plate",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
