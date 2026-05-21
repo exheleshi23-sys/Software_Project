@@ -28,7 +28,7 @@ CREATE TABLE `arrests` (
   `arrest_number` varchar(30) NOT NULL,
   `suspect_id` int NOT NULL,
   `case_id` int NOT NULL,
-  `arresting_officer_id` int NOT NULL,
+  `arresting_officer_id` varchar(50) DEFAULT NULL,
   `arrest_date` datetime NOT NULL,
   `charges` text NOT NULL,
   `status` enum('detained','released','charged','convicted') DEFAULT 'detained',
@@ -61,9 +61,9 @@ DROP TABLE IF EXISTS `audit_log`;
 /*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `audit_log` (
   `Log_ID` int NOT NULL,
-  `User_ID` int NOT NULL,
+  `User_ID` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`Log_ID`),
-  KEY `User_ID` (`User_ID`),
+  KEY `audit_log_ibfk_1` (`User_ID`),
   CONSTRAINT `audit_log_ibfk_1` FOREIGN KEY (`User_ID`) REFERENCES `user` (`User_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -105,6 +105,33 @@ LOCK TABLES `case_assignment` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `case_notes`
+--
+
+DROP TABLE IF EXISTS `case_notes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `case_notes` (
+  `Note_ID` int NOT NULL AUTO_INCREMENT,
+  `Case_ID` int NOT NULL,
+  `Note_Text` text NOT NULL,
+  `Created_At` datetime NOT NULL,
+  PRIMARY KEY (`Note_ID`),
+  KEY `fk_case_notes_case` (`Case_ID`),
+  CONSTRAINT `fk_case_notes_case` FOREIGN KEY (`Case_ID`) REFERENCES `cases` (`Case_ID`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `case_notes`
+--
+
+LOCK TABLES `case_notes` WRITE;
+/*!40000 ALTER TABLE `case_notes` DISABLE KEYS */;
+/*!40000 ALTER TABLE `case_notes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `cases`
 --
 
@@ -134,6 +161,34 @@ LOCK TABLES `cases` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `citizen_report`
+--
+
+DROP TABLE IF EXISTS `citizen_report`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `citizen_report` (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `CitizenId` varchar(50) NOT NULL,
+  `Description` text NOT NULL,
+  `ReportedAt` datetime NOT NULL,
+  `Status` varchar(20) NOT NULL DEFAULT 'Pending',
+  PRIMARY KEY (`Id`),
+  KEY `fk_citizen_report_user` (`CitizenId`),
+  CONSTRAINT `fk_citizen_report_user` FOREIGN KEY (`CitizenId`) REFERENCES `user` (`User_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `citizen_report`
+--
+
+LOCK TABLES `citizen_report` WRITE;
+/*!40000 ALTER TABLE `citizen_report` DISABLE KEYS */;
+/*!40000 ALTER TABLE `citizen_report` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `complaint`
 --
 
@@ -145,9 +200,9 @@ CREATE TABLE `complaint` (
   `Category` varchar(20) NOT NULL,
   `Description` varchar(255) NOT NULL,
   `Date` date NOT NULL,
-  `Officer_ID` int NOT NULL,
+  `Officer_ID` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`Complaint_ID`),
-  KEY `Officer_ID` (`Officer_ID`),
+  KEY `complaint_ibfk_1` (`Officer_ID`),
   CONSTRAINT `complaint_ibfk_1` FOREIGN KEY (`Officer_ID`) REFERENCES `user` (`User_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -204,10 +259,10 @@ CREATE TABLE `dna_analysis` (
   `Date_Received` date NOT NULL,
   `Date_Analyzed` date NOT NULL,
   `Condition_on_Arrival` varchar(20) NOT NULL,
-  `Forensic_Expert_ID` int NOT NULL,
+  `Forensic_Expert_ID` varchar(50) DEFAULT NULL,
   `Investigation_ID` int NOT NULL,
   PRIMARY KEY (`Investigation_ID`,`Analysis_ID`),
-  KEY `Forensic_Expert_ID` (`Forensic_Expert_ID`),
+  KEY `dna_analysis_ibfk_1` (`Forensic_Expert_ID`),
   CONSTRAINT `dna_analysis_ibfk_1` FOREIGN KEY (`Forensic_Expert_ID`) REFERENCES `user` (`User_ID`),
   CONSTRAINT `dna_analysis_ibfk_2` FOREIGN KEY (`Investigation_ID`) REFERENCES `investigation_report` (`Investigation_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -231,9 +286,9 @@ DROP TABLE IF EXISTS `driving_license`;
 /*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `driving_license` (
   `License_ID` int NOT NULL,
-  `User_ID` int NOT NULL,
+  `User_ID` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`License_ID`),
-  KEY `User_ID` (`User_ID`),
+  KEY `driving_license_ibfk_1` (`User_ID`),
   CONSTRAINT `driving_license_ibfk_1` FOREIGN KEY (`User_ID`) REFERENCES `user` (`User_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -262,8 +317,8 @@ CREATE TABLE `evidence` (
   `description` text NOT NULL,
   `collection_date` datetime NOT NULL,
   `status` enum('collected','in_analysis','analyzed','stored','released') DEFAULT 'collected',
-  `collected_by` int DEFAULT NULL,
-  `analyzed_by` int DEFAULT NULL,
+  `collected_by` varchar(50) DEFAULT NULL,
+  `analyzed_by` varchar(50) DEFAULT NULL,
   `chain_of_custody` text,
   PRIMARY KEY (`id`),
   UNIQUE KEY `evidence_number` (`evidence_number`),
@@ -302,10 +357,10 @@ CREATE TABLE `fingerprint_analysis` (
   `Date_Received` date NOT NULL,
   `Date_Analyzed` date NOT NULL,
   `Condition_on_arrival` varchar(20) NOT NULL,
-  `Forensic_Expert_ID` int NOT NULL,
+  `Forensic_Expert_ID` varchar(50) DEFAULT NULL,
   `Investigation_ID` int NOT NULL,
   PRIMARY KEY (`Investigation_ID`,`Analysis_ID`),
-  KEY `Forensic_Expert_ID` (`Forensic_Expert_ID`),
+  KEY `fingerprint_analysis_ibfk_1` (`Forensic_Expert_ID`),
   CONSTRAINT `fingerprint_analysis_ibfk_1` FOREIGN KEY (`Forensic_Expert_ID`) REFERENCES `user` (`User_ID`),
   CONSTRAINT `fingerprint_analysis_ibfk_2` FOREIGN KEY (`Investigation_ID`) REFERENCES `investigation_report` (`Investigation_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -335,12 +390,12 @@ CREATE TABLE `incident_report` (
   `Date` date NOT NULL,
   `Time` varchar(20) NOT NULL,
   `Arrest_Record` varchar(20) DEFAULT NULL,
-  `Officer_ID` int NOT NULL,
+  `Officer_ID` varchar(50) DEFAULT NULL,
   `Case_ID` int DEFAULT NULL,
   `Status` enum('open','linked','resolved') DEFAULT 'open',
   PRIMARY KEY (`Report_ID`),
-  KEY `Officer_ID` (`Officer_ID`),
   KEY `Case_ID` (`Case_ID`),
+  KEY `incident_report_ibfk_1` (`Officer_ID`),
   CONSTRAINT `incident_report_ibfk_1` FOREIGN KEY (`Officer_ID`) REFERENCES `user` (`User_ID`),
   CONSTRAINT `incident_report_ibfk_2` FOREIGN KEY (`Case_ID`) REFERENCES `cases` (`Case_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -371,10 +426,10 @@ CREATE TABLE `investigation_report` (
   `Investigative_Conclusions` varchar(255) NOT NULL,
   `Evidence` varchar(255) NOT NULL,
   `Report_ID` int NOT NULL,
-  `Detective_ID` int NOT NULL,
+  `Detective_ID` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`Investigation_ID`),
   KEY `Report_ID` (`Report_ID`),
-  KEY `Detective_ID` (`Detective_ID`),
+  KEY `investigation_report_ibfk_2` (`Detective_ID`),
   CONSTRAINT `investigation_report_ibfk_1` FOREIGN KEY (`Report_ID`) REFERENCES `incident_report` (`Report_ID`),
   CONSTRAINT `investigation_report_ibfk_2` FOREIGN KEY (`Detective_ID`) REFERENCES `user` (`User_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -398,14 +453,14 @@ DROP TABLE IF EXISTS `login_otp`;
 /*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `login_otp` (
   `Id` int NOT NULL AUTO_INCREMENT,
-  `User_ID` int DEFAULT NULL,
+  `User_ID` varchar(50) DEFAULT NULL,
   `Code` varchar(10) DEFAULT NULL,
   `Expiry` datetime DEFAULT NULL,
   `IsUsed` tinyint(1) DEFAULT '0',
   PRIMARY KEY (`Id`),
-  KEY `User_ID` (`User_ID`),
+  KEY `login_otp_ibfk_1` (`User_ID`),
   CONSTRAINT `login_otp_ibfk_1` FOREIGN KEY (`User_ID`) REFERENCES `user` (`User_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -415,12 +470,24 @@ CREATE TABLE `login_otp` (
 LOCK TABLES `login_otp` WRITE;
 /*!40000 ALTER TABLE `login_otp` DISABLE KEYS */;
 INSERT INTO `login_otp` VALUES
-(1,1,'393437','2026-05-07 02:15:59',0),
-(2,1,'205972','2026-05-07 02:18:49',0),
-(3,1,'134321','2026-05-07 02:32:17',0),
-(4,1,'407819','2026-05-07 09:07:48',0),
-(5,1,'814185','2026-05-07 12:44:01',0),
-(6,1,'538863','2026-05-07 13:12:35',0);
+(1,'1','393437','2026-05-07 02:15:59',0),
+(2,'1','205972','2026-05-07 02:18:49',0),
+(3,'1','134321','2026-05-07 02:32:17',0),
+(4,'1','407819','2026-05-07 09:07:48',0),
+(5,'1','814185','2026-05-07 12:44:01',0),
+(6,'1','538863','2026-05-07 13:12:35',0),
+(7,'1','132528','2026-05-14 01:48:45',1),
+(8,'1','232247','2026-05-14 01:51:12',1),
+(9,'1','400959','2026-05-14 07:49:37',1),
+(10,'1','318557','2026-05-14 07:50:57',1),
+(11,'1','740375','2026-05-14 07:51:28',1),
+(12,'1','270927','2026-05-14 08:14:57',1),
+(13,'1','331966','2026-05-14 08:15:48',1),
+(14,'1','425693','2026-05-14 08:16:42',1),
+(15,'1','473637','2026-05-14 08:17:32',1),
+(16,'1','606653','2026-05-14 08:18:22',0),
+(17,'1','377988','2026-05-19 23:59:55',1),
+(18,'1','242526','2026-05-20 00:06:04',1);
 /*!40000 ALTER TABLE `login_otp` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -468,10 +535,10 @@ CREATE TABLE `notifications` (
   `related_id` int DEFAULT NULL,
   `is_read` tinyint(1) DEFAULT '0',
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `User_ID` int DEFAULT NULL,
+  `USER_ID` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `notifications_user_FK` (`User_ID`),
-  CONSTRAINT `notifications_user_FK` FOREIGN KEY (`User_ID`) REFERENCES `user` (`User_ID`)
+  KEY `notifications_ibfk_1` (`USER_ID`),
+  CONSTRAINT `notifications_ibfk_1` FOREIGN KEY (`USER_ID`) REFERENCES `user` (`User_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -498,12 +565,12 @@ CREATE TABLE `road_violation` (
   `ViolationDate` date NOT NULL,
   `Location` varchar(255) NOT NULL,
   `Status` varchar(20) NOT NULL,
-  `User_ID` int NOT NULL,
+  `USER_ID` varchar(50) DEFAULT NULL,
   `Vehicle_ID` int NOT NULL,
   PRIMARY KEY (`Violation_ID`),
-  KEY `User_ID` (`User_ID`),
   KEY `Vehicle_ID` (`Vehicle_ID`),
-  CONSTRAINT `road_violation_ibfk_1` FOREIGN KEY (`User_ID`) REFERENCES `user` (`User_ID`),
+  KEY `road_violation_ibfk_1` (`USER_ID`),
+  CONSTRAINT `road_violation_ibfk_1` FOREIGN KEY (`USER_ID`) REFERENCES `user` (`User_ID`),
   CONSTRAINT `road_violation_ibfk_2` FOREIGN KEY (`Vehicle_ID`) REFERENCES `vehicles` (`Vehicle_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -538,7 +605,12 @@ CREATE TABLE `roles` (
 LOCK TABLES `roles` WRITE;
 /*!40000 ALTER TABLE `roles` DISABLE KEYS */;
 INSERT INTO `roles` VALUES
-(1,'Admin');
+(1,'Admin'),
+(2,'Officer'),
+(3,'Detective'),
+(4,'Forensic'),
+(5,'Traffic'),
+(6,'Citizen');
 /*!40000 ALTER TABLE `roles` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -577,13 +649,13 @@ DROP TABLE IF EXISTS `system_logs`;
 /*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `system_logs` (
   `Log_ID` int NOT NULL AUTO_INCREMENT,
-  `User_ID` int NOT NULL,
+  `USER_ID` varchar(50) DEFAULT NULL,
   `Action` varchar(255) NOT NULL,
   `Table_Affected` varchar(50) DEFAULT NULL,
   `Created_At` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`Log_ID`),
-  KEY `User_ID` (`User_ID`),
-  CONSTRAINT `system_logs_ibfk_1` FOREIGN KEY (`User_ID`) REFERENCES `user` (`User_ID`)
+  KEY `system_logs_ibfk_1` (`USER_ID`),
+  CONSTRAINT `system_logs_ibfk_1` FOREIGN KEY (`USER_ID`) REFERENCES `user` (`User_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -627,17 +699,17 @@ DROP TABLE IF EXISTS `traffic_accident`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `traffic_accident` (
-  `Accident_ID` int NOT NULL,
+  `Accident_ID` int NOT NULL AUTO_INCREMENT,
   `Location` varchar(255) NOT NULL,
   `Description` varchar(512) NOT NULL,
   `AccidentDate` date NOT NULL,
   `AccidentTime` varchar(20) NOT NULL,
   `Severity` int NOT NULL,
   `Status` varchar(20) NOT NULL,
-  `User_ID` int NOT NULL,
+  `USER_ID` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`Accident_ID`),
-  KEY `User_ID` (`User_ID`),
-  CONSTRAINT `traffic_accident_ibfk_1` FOREIGN KEY (`User_ID`) REFERENCES `user` (`User_ID`)
+  KEY `traffic_accident_ibfk_2` (`USER_ID`),
+  CONSTRAINT `traffic_accident_ibfk_2` FOREIGN KEY (`USER_ID`) REFERENCES `user` (`User_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -658,17 +730,17 @@ DROP TABLE IF EXISTS `traffic_fine`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `traffic_fine` (
-  `Fine_ID` int NOT NULL,
+  `Fine_ID` int NOT NULL AUTO_INCREMENT,
   `Amount` int NOT NULL,
   `IssueDate` date NOT NULL,
   `DueDate` date NOT NULL,
   `FineStatus` varchar(20) NOT NULL,
-  `User_ID` int NOT NULL,
+  `USER_ID` varchar(50) DEFAULT NULL,
   `Violation_ID` int NOT NULL,
   PRIMARY KEY (`Fine_ID`),
-  KEY `User_ID` (`User_ID`),
   KEY `Violation_ID` (`Violation_ID`),
-  CONSTRAINT `traffic_fine_ibfk_1` FOREIGN KEY (`User_ID`) REFERENCES `user` (`User_ID`),
+  KEY `traffic_fine_ibfk_1` (`USER_ID`),
+  CONSTRAINT `traffic_fine_ibfk_1` FOREIGN KEY (`USER_ID`) REFERENCES `user` (`User_ID`),
   CONSTRAINT `traffic_fine_ibfk_2` FOREIGN KEY (`Violation_ID`) REFERENCES `road_violation` (`Violation_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -691,10 +763,10 @@ DROP TABLE IF EXISTS `traffic_report`;
 /*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `traffic_report` (
   `Traffic_Report_ID` int NOT NULL,
-  `User_ID` int NOT NULL,
+  `USER_ID` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`Traffic_Report_ID`),
-  KEY `User_ID` (`User_ID`),
-  CONSTRAINT `traffic_report_ibfk_1` FOREIGN KEY (`User_ID`) REFERENCES `user` (`User_ID`)
+  KEY `traffic_report_ibfk_1` (`USER_ID`),
+  CONSTRAINT `traffic_report_ibfk_1` FOREIGN KEY (`USER_ID`) REFERENCES `user` (`User_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -715,7 +787,7 @@ DROP TABLE IF EXISTS `user`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `user` (
-  `User_ID` int NOT NULL,
+  `User_ID` varchar(50) NOT NULL,
   `Name` varchar(20) NOT NULL,
   `Surname` varchar(20) NOT NULL,
   `Email` varchar(254) NOT NULL,
@@ -742,7 +814,8 @@ CREATE TABLE `user` (
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
 INSERT INTO `user` VALUES
-(1,'john','doe','amarildowhack@gmail.com','$2a$12$dAuCOsmUIU289Gg38mgHUuS5QRaw2yzBM.fjvpDmWNceaG6zCz27i','0691234567','Tirana','2000-01-01',NULL,1,1,'active');
+('1','john','doe','amarildowhack@gmail.com','$2a$11$RINXwU/xhhQrGZy1XWedou30tWVx7zbNd/fXQfvrEaaoKRJAjQHlS','0691234567','Tirana','2000-01-01',NULL,1,1,'active'),
+('K509','Amarildo','Hazizi','amarildohazizi05@gmail.com','$2a$11$TzjzBztOiU7ZVkKKzEZpr.blj4LxPrxO3QoY3QhflmWy9nKxaCuSu','0699615179','Jordan Misja','2005-09-05','string',6,1,'active');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -755,12 +828,12 @@ DROP TABLE IF EXISTS `vehicle_control`;
 /*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `vehicle_control` (
   `Control_ID` int NOT NULL,
-  `User_ID` int NOT NULL,
+  `USER_ID` varchar(50) DEFAULT NULL,
   `Vehicle_ID` int NOT NULL,
   PRIMARY KEY (`Control_ID`),
-  KEY `User_ID` (`User_ID`),
   KEY `Vehicle_ID` (`Vehicle_ID`),
-  CONSTRAINT `vehicle_control_ibfk_1` FOREIGN KEY (`User_ID`) REFERENCES `user` (`User_ID`),
+  KEY `vehicle_control_ibfk_1` (`USER_ID`),
+  CONSTRAINT `vehicle_control_ibfk_1` FOREIGN KEY (`USER_ID`) REFERENCES `user` (`User_ID`),
   CONSTRAINT `vehicle_control_ibfk_2` FOREIGN KEY (`Vehicle_ID`) REFERENCES `vehicles` (`Vehicle_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -783,16 +856,16 @@ DROP TABLE IF EXISTS `vehicles`;
 /*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `vehicles` (
   `Vehicle_ID` int NOT NULL,
-  `PlateNumber` int NOT NULL,
+  `PlateNumber` varchar(20) NOT NULL,
   `Model` varchar(255) NOT NULL,
   `Brand` varchar(255) NOT NULL,
   `Color` varchar(255) NOT NULL,
-  `RegistrationNumber` int NOT NULL,
-  `RegistratiionStatus` varchar(20) NOT NULL,
-  `User_ID` int NOT NULL,
+  `RegistrationNumber` varchar(50) NOT NULL,
+  `RegistrationStatus` varchar(20) NOT NULL,
+  `USER_ID` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`Vehicle_ID`),
-  KEY `User_ID` (`User_ID`),
-  CONSTRAINT `vehicles_ibfk_1` FOREIGN KEY (`User_ID`) REFERENCES `user` (`User_ID`)
+  KEY `vehicles_ibfk_1` (`USER_ID`),
+  CONSTRAINT `vehicles_ibfk_1` FOREIGN KEY (`USER_ID`) REFERENCES `user` (`User_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -844,4 +917,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*M!100616 SET NOTE_VERBOSITY=@OLD_NOTE_VERBOSITY */;
 
--- Dump completed on 2026-05-12 20:55:15
+-- Dump completed on 2026-05-21  3:55:25
