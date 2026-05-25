@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Police Management System — Secure Login</title>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0a0f1e; --navy-2: #0d1528; --navy-3: #111d35;
+    --blue: #1a3a6b; --blue-2: #1e4d8c; --accent: #3b82f6; --accent-2: #60a5fa;
+    --gold: #f59e0b; --gold-2: #fbbf24; --red: #ef4444; --green: #22c55e;
+    --text: #e2e8f0; --text-dim: #94a3b8; --border: rgba(59,130,246,0.2);
+  }
+  body { font-family: 'IBM Plex Sans', sans-serif; background: var(--navy); color: var(--text); min-height: 100vh; display: flex; overflow: hidden; }
+  .bg-grid { position: fixed; inset: 0; z-index: 0; background-image: linear-gradient(rgba(59,130,246,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.04) 1px, transparent 1px); background-size: 50px 50px; animation: gridShift 20s linear infinite; }
+  @keyframes gridShift { from { transform: translateY(0); } to { transform: translateY(50px); } }
+  .bg-radial { position: fixed; inset: 0; z-index: 0; background: radial-gradient(ellipse 80% 60% at 20% 50%, rgba(26,58,107,0.4) 0%, transparent 70%), radial-gradient(ellipse 60% 80% at 80% 20%, rgba(59,130,246,0.08) 0%, transparent 60%); }
+  .scanlines { position: fixed; inset: 0; z-index: 1; pointer-events: none; background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 4px); }
+  .left-panel { position: relative; z-index: 2; flex: 0 0 55%; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 60px 80px; border-right: 1px solid var(--border); }
+  .badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.3); padding: 6px 14px; border-radius: 2px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 40px; animation: fadeSlideIn 0.8s ease both; }
+  .badge::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); animation: pulse 2s ease infinite; }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+  .shield-icon { width: 80px; height: 80px; margin-bottom: 32px; animation: fadeSlideIn 0.8s 0.1s ease both; }
+  h1 { font-family: 'Rajdhani', sans-serif; font-size: 52px; font-weight: 700; line-height: 1.1; margin-bottom: 16px; animation: fadeSlideIn 0.8s 0.2s ease both; }
+  h1 span { color: var(--accent-2); }
+  .subtitle { font-size: 15px; color: var(--text-dim); font-weight: 300; max-width: 440px; line-height: 1.7; margin-bottom: 60px; animation: fadeSlideIn 0.8s 0.3s ease both; }
+  .stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; width: 100%; max-width: 480px; animation: fadeSlideIn 0.8s 0.4s ease both; }
+  .stat-card { background: rgba(255,255,255,0.03); border: 1px solid var(--border); padding: 20px 16px; border-radius: 4px; }
+  .stat-value { font-family: 'Rajdhani', sans-serif; font-size: 28px; font-weight: 700; color: var(--accent-2); }
+  .stat-label { font-size: 11px; color: var(--text-dim); letter-spacing: 1px; text-transform: uppercase; margin-top: 4px; }
+  .role-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 48px; max-width: 480px; animation: fadeSlideIn 0.8s 0.5s ease both; }
+  .role-tag { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--text-dim); padding: 8px 12px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 3px; }
+  .role-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+  .right-panel { position: relative; z-index: 2; flex: 0 0 45%; display: flex; align-items: center; justify-content: center; padding: 60px; background: rgba(10,15,30,0.5); }
+  .login-card { width: 100%; max-width: 400px; animation: fadeSlideIn 0.8s 0.3s ease both; }
+  .login-header { margin-bottom: 32px; }
+  .login-header h2 { font-family: 'Rajdhani', sans-serif; font-size: 28px; font-weight: 600; margin-bottom: 6px; }
+  .login-header p { font-size: 13px; color: var(--text-dim); }
+  .api-status { display: flex; align-items: center; gap: 6px; font-size: 10px; color: var(--text-dim); font-family: 'IBM Plex Mono', monospace; margin-bottom: 20px; letter-spacing: 0.5px; }
+  .api-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--text-dim); transition: all 0.3s; }
+  .api-dot.online { background: var(--green); box-shadow: 0 0 6px var(--green); }
+  .api-dot.offline { background: var(--gold); box-shadow: 0 0 6px var(--gold); }
+  .field-group { margin-bottom: 20px; }
+  label { display: block; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-dim); margin-bottom: 8px; font-family: 'IBM Plex Mono', monospace; }
+  .input-wrap { position: relative; }
+  .input-wrap svg { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); opacity: 0.4; pointer-events: none; }
+  input[type="text"], input[type="password"], select { width: 100%; padding: 13px 14px 13px 44px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; color: var(--text); font-family: 'IBM Plex Sans', sans-serif; font-size: 14px; transition: border-color 0.2s, background 0.2s; outline: none; -webkit-appearance: none; }
+  input:focus, select:focus { border-color: var(--accent); background: rgba(59,130,246,0.05); }
+  select { cursor: pointer; }
+  select option { background: #0d1528; }
+  .btn-login { width: 100%; padding: 14px; background: linear-gradient(135deg, var(--blue-2), var(--accent)); border: none; border-radius: 4px; color: white; font-family: 'Rajdhani', sans-serif; font-size: 17px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; transition: all 0.2s; margin-top: 28px; display: flex; align-items: center; justify-content: center; gap: 10px; }
+  .btn-login:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(59,130,246,0.3); }
+  .btn-login:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+  .spinner { width: 16px; height: 16px; border: 2px solid rgba(255,255,255,0.3); border-top-color: white; border-radius: 50%; animation: spin 0.7s linear infinite; display: none; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .divider { display: flex; align-items: center; gap: 12px; margin: 28px 0; }
+  .divider-line { flex: 1; height: 1px; background: rgba(255,255,255,0.08); }
+  .divider span { font-size: 11px; color: var(--text-dim); letter-spacing: 1px; }
+  .citizen-btn { width: 100%; padding: 13px; background: transparent; border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; color: var(--text-dim); font-family: 'IBM Plex Sans', sans-serif; font-size: 13px; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 8px; }
+  .citizen-btn:hover { border-color: var(--accent); color: var(--accent-2); background: rgba(59,130,246,0.05); }
+  .security-notice { display: flex; align-items: center; gap: 8px; margin-top: 28px; padding: 12px 14px; background: rgba(245,158,11,0.06); border: 1px solid rgba(245,158,11,0.15); border-radius: 3px; font-size: 11px; color: rgba(245,158,11,0.7); font-family: 'IBM Plex Mono', monospace; }
+  .error-msg { background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3); color: #fca5a5; padding: 12px 14px; border-radius: 3px; font-size: 13px; margin-top: 16px; display: none; }
+  .success-msg { background: rgba(34,197,94,0.1); border: 1px solid rgba(34,197,94,0.3); color: #86efac; padding: 12px 14px; border-radius: 3px; font-size: 13px; margin-top: 16px; display: none; }
+  @keyframes fadeSlideIn { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="bg-radial"></div>
+<div class="scanlines"></div>
+
+<div class="left-panel">
+  <div class="badge">Secure Access Portal</div>
+  <svg class="shield-icon" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M40 8L14 18V36C14 52 26 65 40 70C54 65 66 52 66 36V18L40 8Z" fill="rgba(26,58,107,0.5)" stroke="#3b82f6" stroke-width="1.5"/>
+    <path d="M40 16L20 24V38C20 51 29 61 40 65C51 61 60 51 60 38V24L40 16Z" fill="rgba(59,130,246,0.1)" stroke="rgba(96,165,250,0.4)" stroke-width="1"/>
+    <path d="M33 39L38 44L48 34" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="40" cy="39" r="10" fill="none" stroke="rgba(59,130,246,0.2)" stroke-width="1"/>
+    <text x="40" y="38" text-anchor="middle" fill="#fbbf24" font-family="Rajdhani" font-size="9" font-weight="700" dy="4">PMS</text>
+  </svg>
+  <h1>Police<br><span>Management</span><br>System</h1>
+  <p class="subtitle">A centralized law enforcement digital platform for incident reporting, case management, evidence tracking, and administrative oversight.</p>
+  <div class="role-grid">
+    <div class="role-tag"><div class="role-dot" style="background:#3b82f6"></div>Administrator</div>
+    <div class="role-tag"><div class="role-dot" style="background:#22c55e"></div>Police Officer</div>
+    <div class="role-tag"><div class="role-dot" style="background:#a78bfa"></div>Detective</div>
+    <div class="role-tag"><div class="role-dot" style="background:#f59e0b"></div>Forensic Expert</div>
+    <div class="role-tag"><div class="role-dot" style="background:#ef4444"></div>Traffic Officer</div>
+    <div class="role-tag"><div class="role-dot" style="background:#94a3b8"></div>Citizen</div>
+  </div>
+</div>
+<div class="right-panel">
+  <div class="login-card">
+    <div class="login-header">
+      <h2>Secure Login</h2>
+      <p>Enter your department credentials to access the system</p>
+    </div>
+
+    <div class="api-status">
+      <div class="api-dot" id="api-dot"></div>
+      <span id="api-status-text">Checking API...</span>
+    </div>
+
+    <div class="field-group">
+      <label>Badge / User ID</label>
+      <div class="input-wrap">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <input type="text" id="username" placeholder="Enter your badge number" />
+      </div>
+    </div>
+
+    <div class="field-group">
+      <label>Password</label>
+      <div class="input-wrap">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <input type="password" id="password" placeholder="••••••••" />
+      </div>
+    </div>
+
+    <div class="field-group">
+      <label>Role</label>
+      <div class="input-wrap">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        <select id="role">
+          <option value="">Select your role...</option>
+          <option value="Admin">Administrator</option>
+          <option value="Officer">Police Officer</option>
+          <option value="Detective">Detective</option>
+          <option value="Forensic">Forensic Expert</option>
+          <option value="Traffic">Traffic Officer</option>
+          <option value="Citizen">Citizen</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="error-msg" class="error-msg"></div>
+    <div id="success-msg" class="success-msg"></div>
+
+    <button class="btn-login" id="login-btn" onclick="handleLogin()">
+      <div class="spinner" id="spinner"></div>
+      <span id="btn-text">Authenticate &amp; Enter System</span>
+    </button>
+
+    
+
+    <div class="security-notice">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+      System access is authenticated and activity may be logged
+    </div>
+  </div>
+</div>
+
+<script>
+const API_BASE = 'http://localhost:5000/api';
+
+const ROLE_PAGES = {
+  Admin: 'dashboard-admin.html', Officer: 'dashboard-officer.html',
+  Detective: 'dashboard-detective.html', Forensic: 'dashboard-forensic.html',
+  Traffic: 'dashboard-traffic.html', Citizen: 'dashboard-citizen.html',
+};
+
+async function checkApi() {
+  const dot = document.getElementById('api-dot');
+  const text = document.getElementById('api-status-text');
+  try {
+    await fetch(`${API_BASE}/auth/login`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ badgeNumber: '', password: '', role: '' }),
+      signal: AbortSignal.timeout(3000)
+    });
+    dot.classList.add('online');
+    text.textContent = 'API Connected — Live authentication active';
+  } catch {
+    dot.classList.add('offline');
+    text.textContent = 'API Offline — Please start the backend API';
+  }
+}
+
+function showMsg(type, msg) {
+  const el = document.getElementById(type + '-msg');
+  el.textContent = (type === 'error' ? '⚠ ' : '✓ ') + msg;
+  el.style.display = 'block';
+  document.getElementById(type === 'error' ? 'success-msg' : 'error-msg').style.display = 'none';
+}
+
+function setLoading(v) {
+  document.getElementById('login-btn').disabled = v;
+  document.getElementById('spinner').style.display = v ? 'block' : 'none';
+  document.getElementById('btn-text').textContent = v ? 'Authenticating...' : 'Authenticate & Enter System';
+}
+
+async function handleLogin() {
+  const badgeNumber = document.getElementById('username').value.trim();
+  const password = document.getElementById('password').value.trim();
+  const role = document.getElementById('role').value;
+  if (!badgeNumber || !password || !role) { showMsg('error', 'Please fill in all fields.'); return; }
+  setLoading(true);
+  try {
+    const res = await fetch(`${API_BASE}/auth/login`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ badgeNumber, password, role }),
+      signal: AbortSignal.timeout(5000)
+    });
+    if (res.ok) {
+      const user = await res.json();
+      sessionStorage.setItem('pms_user', JSON.stringify(user));
+      showMsg('success', `Welcome, ${user.fullName}! Redirecting...`);
+      setTimeout(() => { window.location.href = ROLE_PAGES[user.role]; }, 800);
+    } else {
+      const err = await res.json().catch(() => ({}));
+      showMsg('error', err.message || 'Invalid credentials.');
+      setLoading(false);
+    }
+  } catch (err) {
+    showMsg('error', 'Cannot connect to server. Please ensure the API is running.');
+    setLoading(false);
+  }
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Enter') handleLogin(); });
+checkApi();
+</script>
+</body>
+</html>

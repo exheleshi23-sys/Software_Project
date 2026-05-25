@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PMS — Citizen Portal</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+  :root { --sidebar-w: 260px; }
+
+  /* Citizen portal has a lighter, more public-facing feel */
+  .citizen-hero { background:linear-gradient(135deg, var(--navy-3), var(--blue)); border:1px solid var(--border); border-radius:12px; padding:32px; margin-bottom:28px; position:relative; overflow:hidden; }
+  .citizen-hero::before { content:''; position:absolute; right:-40px; top:-40px; width:200px; height:200px; border-radius:50%; background:rgba(59,130,246,0.06); }
+  .citizen-hero::after { content:''; position:absolute; right:60px; bottom:-60px; width:150px; height:150px; border-radius:50%; background:rgba(59,130,246,0.04); }
+  .hero-title { font-family:'Rajdhani',sans-serif; font-size:28px; font-weight:700; margin-bottom:8px; }
+  .hero-sub { font-size:14px; color:var(--text-dim); line-height:1.6; max-width:500px; }
+
+  .service-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-bottom:28px; }
+  .service-card { background:var(--card); border:1px solid var(--border-2); border-radius:10px; padding:24px 20px; cursor:pointer; transition:all 0.2s; text-align:center; }
+  .service-card:hover { border-color:var(--accent); transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,0,0,0.3); }
+  .service-icon { width:52px; height:52px; border-radius:12px; display:flex; align-items:center; justify-content:center; margin:0 auto 16px; }
+  .service-title { font-family:'Rajdhani',sans-serif; font-size:16px; font-weight:600; margin-bottom:6px; }
+  .service-desc { font-size:12px; color:var(--text-dim); line-height:1.5; }
+
+  .report-step { display:flex; align-items:flex-start; gap:16px; padding:16px 0; border-bottom:1px solid rgba(255,255,255,0.04); }
+  .report-step:last-child { border-bottom:none; }
+  .step-num { width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:600; flex-shrink:0; background:rgba(59,130,246,0.15); color:var(--accent-2); border:1px solid rgba(59,130,246,0.3); }
+  .step-content { flex:1; }
+  .step-title { font-size:14px; font-weight:500; margin-bottom:4px; }
+  .step-text { font-size:12px; color:var(--text-dim); line-height:1.5; }
+
+  .fine-notice { background:rgba(239,68,68,0.06); border:1px solid rgba(239,68,68,0.2); border-radius:8px; padding:20px; margin-bottom:12px; }
+  .fine-plate { font-family:'IBM Plex Mono',monospace; font-size:18px; font-weight:600; letter-spacing:3px; background:rgba(255,255,255,0.06); border-radius:4px; padding:6px 14px; display:inline-block; margin-bottom:8px; }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div><div class="scanlines"></div>
+
+<aside class="sidebar">
+  <div class="sidebar-brand"><div class="brand-icon">PMS</div><div class="brand-text">Police Portal <span>CITIZEN ACCESS</span></div></div>
+  <div class="sidebar-user">
+    <div class="user-avatar" style="background:rgba(148,163,184,0.2);color:var(--text);">—</div>
+    <div class="user-info"><div class="user-name">Loading...</div><div class="user-badge" style="background:rgba(148,163,184,0.15);color:var(--text-dim);">CITIZEN</div></div>
+  </div>
+  <nav>
+    <div class="nav-section"><div class="nav-label">My Portal</div>
+      <a href="#" class="nav-item active" onclick="showPage('home',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Home</a>
+      <a href="#" class="nav-item" onclick="showPage('report',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>Report Incident</a>
+      <a href="#" class="nav-item" onclick="showPage('complaint',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Submit Complaint</a>
+      <a href="#" class="nav-item" onclick="showPage('missing',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>Report Missing Person</a>
+    </div>
+    <div class="nav-section"><div class="nav-label">Tracking</div>
+      <a href="#" class="nav-item" onclick="showPage('my-reports',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>My Reports</a>
+      <a href="#" class="nav-item" onclick="showPage('fines',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>My Fines <span class="nav-badge" id="fines-count" style="background:var(--red);display:none;"></span></a>
+      <a href="#" class="nav-item" onclick="showPage('notifications',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>Notifications <span class="nav-badge" id="notifications-count" style="display:none;"></span></a>
+    </div>
+  </nav>
+  <div class="sidebar-footer"><div class="change-pwd-btn" onclick="openChangePwdModal()" style="display:flex;align-items:center;gap:10px;padding:10px 16px;cursor:pointer;color:var(--text-dim);font-size:13px;margin-bottom:4px;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Change Password</div><div class="logout-btn" onclick="logout()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>Log Out</div></div>
+</aside>
+
+<main class="main">
+  <div class="topbar">
+    <div class="topbar-left"><div class="topbar-title">Citizen Portal</div></div>
+    <div class="topbar-right">
+      <div class="topbar-time" id="clock"></div>
+      <div class="topbar-btn" style="position:relative;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><div class="notif-dot"></div></div>
+    </div>
+  </div>
+  <div class="page-content">
+
+    <!-- Home -->
+    <div id="page-home">
+      <div class="citizen-hero">
+        <div style="position:relative;z-index:1;">
+          <div class="hero-title">Welcome 👋</div>
+          <div class="hero-sub">Use the Citizen Portal to report incidents, track your cases, view fines, and stay updated with official notifications.</div>
+          <div style="margin-top:20px;display:flex;gap:12px;">
+            <button class="btn btn-primary" onclick="showPage('report',null)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              Report an Incident
+            </button>
+            <button class="btn btn-secondary" onclick="showPage('my-reports',null)">Track My Reports</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="fine-alert" class="alert alert-danger" style="display:none;cursor:pointer;" onclick="showPage('fines',null)"></div>
+
+      <div class="service-grid">
+        <div class="service-card" onclick="showPage('report',null)">
+          <div class="service-icon" style="background:rgba(59,130,246,0.15);color:var(--accent-2);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></div>
+          <div class="service-title">Report Incident</div>
+          <div class="service-desc">Report a crime or suspicious activity to police authorities</div>
+        </div>
+        <div class="service-card" onclick="showPage('my-reports',null)">
+          <div class="service-icon" style="background:rgba(34,197,94,0.15);color:var(--green);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+          <div class="service-title">Track My Case</div>
+          <div class="service-desc">View the status and updates on your submitted reports</div>
+        </div>
+        <div class="service-card" onclick="showPage('fines',null)">
+          <div class="service-icon" style="background:rgba(239,68,68,0.15);color:var(--red);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+          <div class="service-title">View Fines</div>
+          <div class="service-desc">Check and manage your traffic fines and penalties</div>
+        </div>
+        <div class="service-card" onclick="showPage('complaint',null)">
+          <div class="service-icon" style="background:rgba(167,139,250,0.15);color:var(--purple);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <div class="service-title">File Complaint</div>
+          <div class="service-desc">Submit a formal complaint regarding police services</div>
+        </div>
+        <div class="service-card" onclick="showPage('notifications',null)">
+          <div class="service-icon" style="background:rgba(245,158,11,0.15);color:var(--gold);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></div>
+          <div class="service-title">Notifications</div>
+          <div class="service-desc">Stay updated with important alerts and announcements</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon" style="background:rgba(6,182,212,0.15);color:var(--cyan);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.17h3a2 2 0 0 1 2 1.72"/></svg></div>
+          <div class="service-title">Emergency: 112</div>
+          <div class="service-desc">For emergencies, call 112 immediately. Do not use this portal.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Report Incident -->
+    <div id="page-report" style="display:none;">
+      <div class="section-header"><div><div class="section-title">Report an Incident</div><div class="section-subtitle">All reports are reviewed by our officers within 24 hours</div></div></div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header"><div class="card-title">Incident Details</div></div>
+          <div class="card-body" style="padding:24px;">
+            <div class="alert alert-info" style="margin-bottom:20px; font-size:12px;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              For emergencies in progress, please call <strong>112</strong> immediately instead of using this form.
+            </div>
+            <div class="form-row form-2">
+              <div class="form-group"><label>Incident Type</label><select><option>Theft/Robbery</option><option>Vandalism</option><option>Suspicious Activity</option><option>Noise Complaint</option><option>Drug Activity</option><option>Assault (non-emergency)</option><option>Other</option></select></div>
+              <div class="form-group"><label>Date of Incident</label><input id="cit-date" type="date"></div>
+            </div>
+            <div class="form-row form-2">
+              <div class="form-group"><label>Approximate Time</label><input type="time"></div>
+              <div class="form-group"><label>Location</label><input type="text" placeholder="Street, building, or landmark"></div>
+            </div>
+            <div class="form-group mb-4"><label>Description</label><textarea rows="5" placeholder="Please describe the incident in as much detail as possible. Include any suspect descriptions, vehicle details, or other relevant information..."></textarea></div>
+            <div class="form-group mb-4"><label>Your Name (optional — anonymous allowed)</label><input type="text" placeholder="Leave blank to report anonymously"></div>
+            <div class="form-group mb-4"><label>Contact Phone (for follow-up)</label><input type="text" placeholder="+355 ..."></div>
+            <div style="display:flex;gap:12px;">
+              <button class="btn btn-primary" onclick="submitIncidentReport()">Submit Report</button>
+              <button class="btn btn-secondary">Submit Anonymously</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card mb-4">
+            <div class="card-header"><div class="card-title">How It Works</div></div>
+            <div class="card-body" style="padding:16px 20px;">
+              <div class="report-step"><div class="step-num">1</div><div class="step-content"><div class="step-title">Submit your report</div><div class="step-text">Fill in the details and submit. You'll receive a report number for tracking.</div></div></div>
+              <div class="report-step"><div class="step-num">2</div><div class="step-content"><div class="step-title">Officer Review</div><div class="step-text">A duty officer will review your report within 24 hours and classify it.</div></div></div>
+              <div class="report-step"><div class="step-num">3</div><div class="step-content"><div class="step-title">Investigation</div><div class="step-text">If applicable, the case is assigned to a detective for further investigation.</div></div></div>
+              <div class="report-step"><div class="step-num">4</div><div class="step-content"><div class="step-title">Updates</div><div class="step-text">You'll receive notifications when the status of your report changes.</div></div></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"><div class="card-title">Emergency Contacts</div></div>
+            <div class="card-body" style="padding:16px 20px;">
+              <div style="display:flex;flex-direction:column;gap:12px;">
+                <div style="display:flex;justify-content:space-between;"><span style="font-size:13px;">Emergency Number</span><span style="font-family:'IBM Plex Mono',monospace;color:var(--red);font-weight:700;">112</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- My Reports -->
+    <div id="page-my-reports" style="display:none;">
+      <div class="section-header"><div><div class="section-title">My Reports</div><div class="section-subtitle">Track the status of your submitted incident reports</div></div></div>
+      <div class="card">
+        <div class="card-body">
+          <table class="data-table">
+            <thead><tr><th>Report ID</th><th>Type</th><th>Description</th><th>Location</th><th>Date</th><th>Status</th><th>Details</th></tr></thead>
+            <tbody id="my-reports-tbody"><tr><td colspan="7" style="text-align:center;color:var(--text-dim);padding:16px;">Loading...</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fines -->
+    <div id="page-fines" style="display:none;">
+      <div class="section-header"><div><div class="section-title">My Traffic Fines</div></div></div>
+      <div id="fine-detail" class="fine-notice" style="display:none;"></div>
+      <div class="card">
+        <div class="card-header"><div class="card-title">Fine History</div></div>
+        <div class="card-body"><table class="data-table"><thead><tr><th>Fine ID</th><th>Plate</th><th>Violation</th><th>Amount</th><th>Date</th><th>Status</th><th>Action</th></tr></thead>
+            <tbody id="my-fines-tbody"><tr><td colspan="7" style="text-align:center;color:var(--text-dim);padding:16px;">Loading...</td></tr></tbody></table></div>
+      </div>
+    </div>
+
+    <!-- Complaint -->
+    <div id="page-complaint" style="display:none;">
+      <div class="section-header"><div><div class="section-title">Submit a Complaint</div><div class="section-subtitle">Your complaint will be reviewed by the internal affairs division</div></div></div>
+      <div class="card">
+        <div class="card-header"><div class="card-title">Complaint Form</div></div>
+        <div class="card-body" style="padding:24px;">
+          <div class="form-row form-2">
+            <div class="form-group"><label>Complaint Type</label><select id="comp-type"><option>Officer Misconduct</option><option>Service Quality</option><option>Response Time</option><option>Case Handling</option><option>Other</option></select></div>
+            <div class="form-group"><label>Date of Incident</label><input id="cit-date" type="date"></div>
+          </div>
+          <div class="form-group mb-4"><label>Officer / Department Involved (if known)</label><input type="text" placeholder="Name or badge number"></div>
+          <div class="form-group mb-4"><label>Complaint Description</label><textarea rows="6" placeholder="Please describe your complaint in detail..."></textarea></div>
+          <div class="form-row form-2">
+            <div class="form-group"><label>Your Full Name</label><input type="text" placeholder="Required for official complaints"></div>
+            <div class="form-group"><label>Contact Email</label><input type="text" placeholder="your@email.com"></div>
+          </div>
+          <button class="btn btn-primary" style="margin-top:8px;">Submit Complaint</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notifications -->
+    <div id="page-notifications" style="display:none;">
+      <div class="section-header"><div><div class="section-title">Notifications</div></div><button class="btn btn-secondary btn-sm" onclick="markAllCitizenNotificationsRead()">Mark All Read</button></div>
+      <div class="card">
+        <div class="card-body" id="citizen-notifications-list">
+          <div style="color:var(--text-dim);padding:20px;text-align:center;font-size:12px;">Loading notifications...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Missing Persons (FR_39 / UC32) -->
+    <div id="page-missing" style="display:none;">
+      <div class="section-header"><div><div class="section-title">Report Missing Person</div><div class="section-sub">UC32 — File a report for a missing person</div></div></div>
+
+      <!-- My missing person reports -->
+      <div class="card" style="margin-bottom:20px;">
+        <div class="card-header"><div class="card-title">My Missing Person Reports</div></div>
+        <div class="card-body" style="padding:0;">
+          <table class="data-table">
+            <thead><tr><th>Report #</th><th>Missing Person</th><th>Last Seen</th><th>Last Location</th><th>Status</th><th>Filed</th></tr></thead>
+            <tbody id="missing-reports-tbody"><tr><td colspan="6" style="text-align:center;color:var(--text-dim);padding:20px;">Loading...</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="card">
+        <div class="card-header"><div class="card-title">File New Report</div></div>
+        <div class="card-body" style="padding:20px;display:flex;flex-direction:column;gap:14px;">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+            <div>
+              <label class="form-label">Missing Person Full Name *</label>
+              <input id="mp-name" class="form-control" placeholder="Full name">
+            </div>
+            <div>
+              <label class="form-label">Date of Birth</label>
+              <input id="mp-dob" class="form-control" type="date">
+            </div>
+          </div>
+          <div>
+            <label class="form-label">Physical Description *</label>
+            <textarea id="mp-desc" class="form-control" rows="2" placeholder="Height, weight, hair colour, clothing last worn..."></textarea>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+            <div>
+              <label class="form-label">Last Known Location *</label>
+              <input id="mp-location" class="form-control" placeholder="Last known location">
+            </div>
+            <div>
+              <label class="form-label">Date Last Seen *</label>
+              <input id="mp-date" class="form-control" type="date">
+            </div>
+          </div>
+          <div>
+            <label class="form-label">Your Contact Information *</label>
+            <input id="mp-contact" class="form-control" placeholder="Phone number or email">
+          </div>
+          <div>
+            <label class="form-label">Additional Notes</label>
+            <textarea id="mp-notes" class="form-control" rows="2" placeholder="Any additional relevant information..."></textarea>
+          </div>
+          <button class="btn btn-primary" style="align-self:flex-start;min-width:180px;" onclick="submitMissingReport()">Submit Report</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+<script src="js/api.js"></script>
+<script src="js/citizen.js"></script>
+<script src="js/notifications.js"></script>
+<script>
+function showPage(id, el) {
+  document.querySelectorAll('[id^="page-"]').forEach(p=>p.style.display='none');
+  const page = document.getElementById('page-'+id);
+  if (page) page.style.display='block';
+  if(el){document.querySelectorAll('.nav-item').forEach(n=>n.classList.remove('active'));el.classList.add('active');}
+  const t={home:'Citizen Portal',report:'Report Incident',complaint:'Submit Complaint','my-reports':'My Reports',fines:'My Fines',notifications:'Notifications',missing:'Report Missing Person'};
+  document.querySelector('.topbar-title').textContent=t[id]||'';
+
+  if (id === 'home' && typeof loadDashboardStats === 'function') loadDashboardStats();
+  if (id === 'my-reports' && typeof loadMyReports === 'function') loadMyReports();
+  if (id === 'fines' && typeof loadMyFines === 'function') loadMyFines();
+  if (id === 'notifications' && typeof loadCitizenNotifications === 'function') loadCitizenNotifications();
+  if (id === 'missing' && typeof loadMissingReports === 'function') loadMissingReports();
+}
+function updateClock(){document.getElementById('clock').textContent=new Date().toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',second:'2-digit'});}
+setInterval(updateClock,1000);updateClock();
+</script>
+
+<!-- Change Password Modal (UC3 / FR_02) -->
+<div id="change-pwd-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:2000;align-items:center;justify-content:center;">
+  <div style="background:var(--navy-2);border:1px solid var(--border);border-radius:10px;padding:28px;width:100%;max-width:400px;">
+    <div style="font-family:Rajdhani,sans-serif;font-size:20px;font-weight:600;margin-bottom:6px;">Change Password</div>
+    <div style="font-size:13px;color:var(--text-dim);margin-bottom:20px;">Passwords must be at least 8 characters.</div>
+    <div class="form-group mb-4"><label class="form-label">Current Password</label><input id="pwd-current" type="password" class="form-control" placeholder="Current password"></div>
+    <div class="form-group mb-4"><label class="form-label">New Password</label><input id="pwd-new" type="password" class="form-control" placeholder="At least 8 characters"></div>
+    <div class="form-group mb-4"><label class="form-label">Confirm New Password</label><input id="pwd-confirm" type="password" class="form-control" placeholder="Repeat new password"></div>
+    <div id="pwd-error" style="display:none;color:var(--red);font-size:13px;margin-bottom:12px;"></div>
+    <div style="display:flex;gap:10px;">
+      <button class="btn btn-primary" style="flex:1" onclick="submitChangePassword()">Update Password</button>
+      <button class="btn btn-secondary" style="flex:1" onclick="closeChangePwdModal()">Cancel</button>
+    </div>
+  </div>
+</div>
+<script>
+function openChangePwdModal() {
+  ["pwd-current","pwd-new","pwd-confirm"].forEach(id=>{const el=document.getElementById(id);if(el)el.value="";});
+  const err=document.getElementById("pwd-error");if(err){err.style.display="none";err.textContent="";}
+  const m=document.getElementById("change-pwd-modal");if(m)m.style.display="flex";
+}
+function closeChangePwdModal(){const m=document.getElementById("change-pwd-modal");if(m)m.style.display="none";}
+async function submitChangePassword(){
+  const cur=document.getElementById("pwd-current")?.value;
+  const nw=document.getElementById("pwd-new")?.value;
+  const conf=document.getElementById("pwd-confirm")?.value;
+  const errEl=document.getElementById("pwd-error");
+  if(!cur||!nw||!conf){if(errEl){errEl.textContent="All fields are required.";errEl.style.display="block";}return;}
+  if(nw.length<8){if(errEl){errEl.textContent="New password must be at least 8 characters.";errEl.style.display="block";}return;}
+  if(nw!==conf){if(errEl){errEl.textContent="New passwords do not match.";errEl.style.display="block";}return;}
+  try{
+    await authExtApi.changePassword({currentPassword:cur,newPassword:nw});
+    closeChangePwdModal();
+    showToast("Password changed successfully.");
+  }catch(err){
+    if(errEl){errEl.textContent=err.message||"Failed to change password.";errEl.style.display="block";}
+  }
+}
+</script>
+
+</body>
+</html>
