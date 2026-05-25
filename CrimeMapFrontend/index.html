@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crime Map - Thermal Blueprint</title>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+<style>
+body {
+margin: 0;
+padding: 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#map {
+width: 100%;
+height: 100vh;
+}
+.map-title {
+position: absolute;
+top: 20px;
+left: 60px;
+z-index: 1000;
+background: white;
+padding: 15px 25px;
+border-radius: 8px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+border-left: 5px solid #ff3333;
+}
+.map-title h2 {
+margin: 0 0 5px 0;
+font-size: 20px;
+color: #222;
+}
+.map-title p {
+margin: 0;
+font-size: 13px;
+color: #666;
+}
+</style>
+</head>
+<body>
+
+<div class="map-title">
+<h2>Crime Map Analytics: Thermal Blueprint</h2>
+<p>Dynamic Risk Classification Dashboard</p>
+</div>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src = "app.js"></script>
+<script>
+// 1. Initialize map view
+const map = L.map('map').setView([41.3275, 19.8187], 14);
+
+// 2. Load standard map tiles
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+maxZoom: 19,
+attribution: '© OpenStreetMap contributors'
+}).addTo(map);
+
+// Map layout placements for Area1 to Area5
+const areaCoordinates = {
+"Area1": [41.332, 19.815],
+"Area2": [41.325, 19.810],
+"Area3": [41.320, 19.825],
+"Area4": [41.335, 19.830],
+"Area5": [41.315, 19.818]
+};
+
+// 3. Risk alert color classifications
+function getRiskColor(risk) {
+switch(risk) {
+case 'High': return '#ff3333'; // Deep Red
+case 'Medium': return '#ff9900'; // Orange
+case 'Low': return '#33cc33'; // Green
+default: return '#999999';
+}
+}
+
+// 4. Fetch computed matrix payload from active .NET core local engine
+async function loadThermalBlueprint() {
+try {
+const response = await fetch('http://localhost:5020/api/CrimeMap/thermal-blueprint');
+const data = await response.json();
+
+console.log("Data loaded cleanly:", data);
+
+// 5. Plot each neighborhood calculation cluster
+data.forEach(item => {
+const coords = areaCoordinates[item.location] || [41.3275, 19.8187];
+
+const circle = L.circle(coords, {
+color: getRiskColor(item.riskAssessment),
+fillColor: getRiskColor(item.riskAssessment),
+fillOpacity: 0.45,
+radius: 350
+}).addTo(map);
+
+circle.bindPopup(`
+<div style="font-family: Arial, sans-serif; line-height: 1.4;">
+<strong style="font-size: 14px;">${item.location}</strong><br/>
+<hr style="margin: 5px 0; border: 0; border-top: 1px solid #eee;"/>
+<b>Risk Level:</b> <span style="color:${getRiskColor(item.riskAssessment)}; font-weight:bold;">${item.riskAssessment}</span><br/>
+<b>Incidents Count:</b> ${item.totalCrimes}<br/>
+<b>Avg Street Lights:</b> ${item.avgLighting}/10<br/>
+<b>Avg Patrols:</b> ${item.avgPatrols}/10
+</div>
+`);
+});
+
+} catch (error) {
+console.error("Frontend-to-API network link error:", error);
+}
+}
+
+loadThermalBlueprint();
+</script>
+</body>
+</html>
